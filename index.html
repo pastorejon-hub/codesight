@@ -1229,31 +1229,130 @@ html[data-theme="light"] #cs-training #cs-training-controls{background:#eaf3f9!i
 @keyframes cs71Shine{from{opacity:.65;transform:scale(.98)}to{opacity:1;transform:scale(1.06)}}
 #cs-quiz .cs71-results{text-align:center;padding:24px;border:1px solid #47799b;border-radius:16px;background:#15364c}
 @media(prefers-reduced-motion:reduce){#cs-quiz .cs71-next,#cs-quiz .cs71-stars{animation:none!important}}
-</style><style id="cs72-style">.cs72-bank-note{color:#a6cfe5;font-size:.91rem;margin:12px 0}#cs-start-exam{font-weight:800!important;min-height:48px;border:1px solid #82d8ff!important;box-shadow:0 3px 15px #1a92c955}</style><style id="cs73-email-style">
-#cs73Email{min-height:48px;padding:12px 18px;font-weight:700;border-radius:10px}
-@media(max-width:600px){#cs60Buttons #cs73Email{width:100%;margin-top:8px}}
-</style><style id="cs76-styles">
-.cs76-search{margin:16px 0 22px;padding:18px;border:1px solid #477ca0;border-radius:14px;background:rgba(10,30,48,.65);color:#eaf4ff}
-.cs76-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:18px}
-#cs76edition{font-size:12px;border:1px solid #6ca9cb;border-radius:8px;padding:6px 10px}
-.cs76-search p{font-size:13px;line-height:1.5;color:#c2d8e8}
-.cs76-controls{display:flex;gap:8px;margin:12px 0}
-#cs76query{flex:1;min-width:0;padding:12px;border:1px solid #6da2bf;border-radius:9px;background:#0c1c2d;color:#fff;font-size:16px}
-#cs76clear{padding:10px 14px;border-radius:9px;border:1px solid #6da2bf;background:#1a5678;color:white;cursor:pointer}
-.cs76-hit{padding:12px 2px;border-top:1px solid #34516a;display:flex;flex-direction:column;gap:5px}
-.cs76-hit-title{font-weight:700}
-.cs76-meta{font-size:12px;color:#ffdf99}
-.cs76-hit a{color:#85d5ff;font-weight:650;align-self:flex-start}
-.cs76-foot{font-size:12px!important}
-@media(max-width:640px){.cs76-search{padding:12px}.cs76-head{align-items:flex-start}}
-</style><style id="cs77-feedback">
-#cs73Email.cs77-confirmed,#cs60Reset.cs77-confirmed{background:#177d52!important;border-color:#54e2a4!important;color:#fff!important;box-shadow:0 0 0 2px rgba(84,226,164,.16);font-weight:800}
-</style></head><body>
+</style><style id="cs72-style">.cs72-bank-note{color:#a6cfe5;font-size:.91rem;margin:12px 0}#cs-start-exam{font-weight:800!important;min-height:48px;border:1px solid #82d8ff!important;box-shadow:0 3px 15px #1a92c955}</style><style id="cs73-energy-styles">
+#cs-subgrid .cs73-energy-detail{max-width:920px;margin:auto;padding:clamp(16px,3vw,30px);border:1px solid #5685a6;border-radius:16px;background:rgba(30,88,126,.12);line-height:1.65;color:inherit}
+#cs-subgrid .cs73-energy-detail h3{font-size:clamp(20px,2.5vw,26px);line-height:1.35;margin:10px 0 16px;color:#89d8ff}
+#cs-subgrid .cs73-energy-detail p{margin:14px 0}#cs-subgrid .cs73-energy-detail ol{padding-left:28px}#cs-subgrid .cs73-energy-detail li{padding-left:8px;margin:12px 0}
+#cs-subgrid .cs73-eyebrow{font-size:12px;font-weight:850;letter-spacing:.11em;color:#e9bf6e;margin-top:18px}
+#cs-subgrid .cs73-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}#cs-subgrid .cs73-actions button{padding:12px 17px;min-height:46px;border:1px solid #6ac2f0;border-radius:10px;background:#175d89;color:white;font:inherit;font-weight:750;cursor:pointer}
+#cs-subgrid .cs73-note{font-size:12px;opacity:.75;margin-top:20px}html[data-theme="light"] #cs-subgrid .cs73-energy-detail h3{color:#115d87}
+@media print{#cs-subgrid .cs73-actions,#cs-subgrid .cs73-back{display:none!important}}
+</style><style id="cs75-enhancements">#cs-six .cs75-sticky-nav{position:sticky;top:0;z-index:70;padding:9px 0;background:var(--panel,#102b43);border-bottom:1px solid rgba(119,194,237,.25);margin-bottom:12px}#cs-six .cs75-sticky-nav .cs-return{background:#08628c;color:white;border:1px solid #80d4f6;font-weight:800;min-height:46px;padding:10px 18px}#cs-subgrid .cs75-energy .cs73-actions button.cs75-copied{background:#14804d!important;border-color:#6fe3a0!important;color:#fff!important;box-shadow:0 0 0 2px #3aab73aa}#cs-subgrid .cs75-copy-status{min-height:22px;font-weight:700;color:#72dda3}#cs-subgrid .cs75-energy .cs73-actions button{touch-action:manipulation}html[data-theme="light"] #cs-six .cs75-sticky-nav{background:#f1f8fc}@media print{#cs-six .cs75-sticky-nav{display:none!important}}</style><style id="cs76-unified-navigation">
+/* Unified CodeSight navigation: same appearance in both light and dark themes. */
+#cs-six .cs-return,
+#cs-six .cs75-sticky-nav .cs-return,
+#cs-subgrid .cs73-energy-detail .cs73-back,
+#cs-training #cs-back-training {
+  appearance:none!important;-webkit-appearance:none!important;
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:48px;padding:11px 18px;margin-bottom:10px;
+  border:1.5px solid #75cdec!important;border-radius:11px!important;
+  background:#123b59!important;color:#fff!important;
+  font:750 15px/1.3 Inter,system-ui,sans-serif!important;
+  letter-spacing:.01em;box-shadow:0 3px 12px rgba(0,0,0,.18)!important;
+  cursor:pointer;touch-action:manipulation;transition:background .15s,border-color .15s;
+}
+#cs-six .cs-return:hover,#cs-subgrid .cs73-energy-detail .cs73-back:hover,
+#cs-training #cs-back-training:hover {background:#1c587c!important;border-color:#a0ebff!important}
+#cs-six .cs-return:focus-visible,#cs-subgrid .cs73-energy-detail .cs73-back:focus-visible,
+#cs-training #cs-back-training:focus-visible {outline:3px solid #8de4ff!important;outline-offset:3px}
+/* Primary return-home control is blue everywhere, even in light theme. */
+#cs-six #cs-back-six{background:#08628c!important;border-color:#80d4f6!important;color:#fff!important}
+#cs-six #cs-back-six:hover{background:#087aa6!important}
+#cs-six .cs75-sticky-nav{background:var(--panel,#102b43)}
+html[data-theme="light"] #cs-six .cs75-sticky-nav{background:#f1f8fc}
+@media(max-width:600px){#cs-six .cs-return,#cs-subgrid .cs73-energy-detail .cs73-back{min-height:48px;padding:11px 14px;font-size:14px!important}}
+@media print{#cs-six .cs-return,#cs-subgrid .cs73-back{display:none!important}}
+</style><style id="cs77-transparent-sticky-nav">
+/* Keep the Main Menu control sticky without a full-width colored strip. */
+#cs-six .cs75-sticky-nav,
+html[data-theme="light"] #cs-six .cs75-sticky-nav {
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  padding:6px 0!important;
+  margin-bottom:8px!important;
+}
+</style><style id="cs78-note-tools-style">
+#corrections .cs78-title-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:0 0 12px}
+#corrections .cs78-title-row h1{margin:0}
+#corrections #cs78BathroomNote,#cs60Workflow .cs78-mode{background:#166eaa;color:#fff;border:1px solid #79c7ed;border-radius:10px;padding:11px 15px;min-height:45px;font:inherit;font-weight:750;cursor:pointer}
+#corrections #cs78BathroomNote:hover,#cs60Workflow .cs78-mode:hover{background:#2189c4}
+#cs60Workflow .cs78-actions{display:flex;gap:9px;flex-wrap:wrap;margin:10px 0 13px}
+#cs60Workflow .cs78-hint{font-size:13px;color:#bdd4e4;margin:0 0 10px}
+#cs60Workflow .cs78-mode:focus-visible,#corrections #cs78BathroomNote:focus-visible{outline:3px solid #f4c25e;outline-offset:2px}
+</style><style id="cs79Layout">
+#corrections #cs78BathroomNote,#corrections #cs79LightingNote{background:#166eaa;color:#fff;border:1px solid #79c7ed;border-radius:10px;padding:11px 15px;min-height:45px;font:inherit;font-weight:750;cursor:pointer}
+#corrections #cs79LightingNote:hover{background:#2189c4}
+#cs60Workflow .cs79-select-title{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+#cs60Workflow .cs79-select-title .cs78-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0}
+#cs60Workflow .cs79-select-title .cs78-mode{min-height:44px;padding:9px 13px;font-size:15px}
+#cs60Suggestions[hidden]{display:none!important}
+#cs60Suggestions{margin:8px 0 12px;padding:10px 12px;background:#0e263a;border:1px solid #64a9d4;box-shadow:0 3px 12px #0002}
+#cs60Suggestions>strong{display:block;margin-bottom:5px;color:#b9e7ff}
+#cs60Suggestions .cs60ref{padding:8px 4px}
+#cs60Suggestions .cs60ref button,#cs60Suggestions .cs60ref a{padding:8px 10px;font-size:14px}
+@media(max-width:700px){#cs60Workflow .cs79-select-title{align-items:flex-start}#corrections .cs78-title-row{gap:8px}}
+</style><style id="cs80UniformQuickTables">
+/* Compact, equal-sized quick references; preserve horizontal swipe on iPad. */
+#corrections #cs46Toolbar{display:flex;flex-wrap:nowrap;gap:9px;overflow-x:auto;overflow-y:hidden;align-items:stretch;padding:10px 2px 16px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+#corrections #cs46Toolbar .cs46-btn{box-sizing:border-box;flex:0 0 174px;width:174px;min-width:174px;max-width:174px;min-height:60px;white-space:normal;line-height:1.2;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px 9px;font-size:14px;border-radius:11px}
+@media(max-width:600px){#corrections #cs46Toolbar .cs46-btn{flex-basis:158px;width:158px;min-width:158px;max-width:158px;font-size:13px}}
+</style><style id="cs81CompactReferenceButtons">
+/* Wrap the complete reference toolbar instead of requiring horizontal swipes. */
+#corrections #cs46Toolbar{display:flex!important;flex-wrap:wrap!important;overflow-x:visible!important;overflow-y:visible!important;gap:7px!important;padding:8px 0 12px!important;max-width:100%!important}
+#corrections #cs46Toolbar .cs46-btn{flex:1 1 132px!important;width:auto!important;min-width:0!important;max-width:none!important;min-height:43px!important;padding:7px 8px!important;font-size:12px!important;line-height:1.18!important;border-radius:9px!important;white-space:normal!important}
+@media(max-width:700px){#corrections #cs46Toolbar .cs46-btn{flex:1 1 112px!important;font-size:11.5px!important;min-height:44px!important}}
+@media(max-width:390px){#corrections #cs46Toolbar .cs46-btn{flex:1 1 100px!important}}
+</style><style id="cs82-reset-safety-style">
+#corrections #cs82OutdoorGfci{background:#166eaa;color:#fff;border:1px solid #79c7ed;border-radius:10px;padding:11px 15px;min-height:45px;font:inherit;font-weight:750;cursor:pointer}
+#cs60Buttons{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+#cs60Buttons .cs82-action-spacer{flex:1 1 100px}
+#cs60Workflow #cs60Reset{background:#322331;border:1px solid #d18a98;color:#fff}
+#cs60Workflow #cs82Undo{background:#245d56;border:1px solid #80cbbb;color:#fff}
+#cs60Workflow #cs82Undo[hidden]{display:none!important}
+@media(max-width:620px){#cs60Buttons .cs82-action-spacer{flex-basis:100%;height:0}#cs60Buttons #cs60Reset{margin-left:auto}}
+</style><style id="cs84-email-styles">
+#cs84-open{position:fixed;right:18px;bottom:85px;z-index:9000;background:#176b9d;color:white;border:1px solid #75c9ef;border-radius:13px;padding:11px 15px;font-weight:750;box-shadow:0 4px 20px #0005;cursor:pointer}#cs84-count{background:#f6cb59;color:#132638;border-radius:20px;padding:2px 7px;margin-left:5px}#cs84-modal[hidden]{display:none!important}#cs84-modal{position:fixed;inset:0;z-index:12000;background:#071524b8;display:flex;justify-content:center;align-items:center;padding:15px}#cs84-dialog{background:#10283e;color:#eff7ff;border:1px solid #6598b8;border-radius:16px;width:min(750px,100%);max-height:88vh;overflow:auto;padding:22px;box-shadow:0 12px 50px #0009}#cs84-dialog h2{color:white;margin:0}#cs84-dialog button,.cs84-add{background:#176b9d;color:#fff;border:1px solid #79c4ed;border-radius:9px;padding:9px 12px;font:inherit;font-weight:650;cursor:pointer}#cs84-dialog button:disabled{opacity:.45;cursor:default}#cs84-dialog .cs84-danger{background:#492c35;border-color:#b97885}#cs84-dialog .cs84-row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin:12px 0}#cs84-items{display:grid;gap:9px;margin:12px 0}#cs84-items article{background:#18374e;border:1px solid #47728c;border-radius:10px;padding:12px}#cs84-items article p{font-size:12px;color:#b9d4e5;margin:4px 0}#cs84-preview{width:100%;min-height:135px;max-height:250px;background:#081d2e;color:#eaf5ff;border:1px solid #537c97;border-radius:9px;padding:12px;box-sizing:border-box;font:13px/1.45 system-ui}#cs84-feedback{color:#a4e9b9;min-height:1.2em} .cs84-add{margin:10px 5px 8px 0;font-size:13px} .cs84-add.cs84-added{background:#23664b;border-color:#8adbb0} @media(max-width:650px){#cs84-open{right:10px;bottom:70px;padding:9px 11px}#cs84-dialog{padding:14px}}
+</style><style id="cs91-restore-full-dropdown-outline">
+/* Restore the original complete rounded outline on Colorado Model section cards.
+   Do not change native details/summary behavior or the section click handlers. */
+#electricReadyReference .er-card,
+#solarReadyReference .er-card,
+#commercialElectricReference .er-card,
+#commercialEvReference .er-card,
+#commercialSolarReference .er-card {
+ border: 1px solid #56809b !important;
+ border-radius: 16px !important;
+ box-sizing: border-box !important;
+ overflow: hidden !important;
+ margin-bottom: 12px !important;
+}
+#commercialSolarReference .er-item:not(.er-card .er-item) {
+ border: 1px solid #56809b !important;
+ border-radius: 16px !important;
+ box-sizing: border-box !important;
+}
+html[data-theme="light"] #electricReadyReference .er-card,
+html[data-theme="light"] #solarReadyReference .er-card,
+html[data-theme="light"] #commercialElectricReference .er-card,
+html[data-theme="light"] #commercialEvReference .er-card,
+html[data-theme="light"] #commercialSolarReference .er-card {
+ border-color: #a2c7de !important;
+}
+</style>
+<style id="cs98-tagline-style">
+.cs98-tagline{color:#e8b84c;font-size:clamp(14px,1.6vw,20px);font-weight:650;letter-spacing:.3px;line-height:1.45;margin-top:12px;}
+html[data-theme="light"] .cs98-tagline{color:#8c5b12!important;}
+@media(max-width:600px){.cs98-tagline{font-size:14px;margin-top:9px;}}
+</style>
+</head><body>
 <div class="masthead"><div aria-hidden="true" class="header-reticle"><span class="reticle-ring"></span><span class="reticle-dot"></span></div>
 <div class="masthead-inner">
 <div class="masthead-kicker"><span class="masthead-mark">◈</span> ELECTRICAL · ENERGY · SOLAR</div>
 <div class="masthead-title">CODE<span>SIGHT</span></div>
 <div class="masthead-subtitle">INSPECTION FIELD GUIDE</div>
+<div class="cs98-tagline">Learn the Code. Apply the Rule. Master the Trade.</div>
 <div class="masthead-desc">Residential &amp; Commercial  •  Energy, Electric &amp; Solar Code References  •  Copy-ready inspection corrections</div>
 </div>
 </div>
@@ -1262,7 +1361,7 @@ html[data-theme="light"] #cs-training #cs-training-controls{background:#eaf3f9!i
 <div class="field-search-row"><input aria-label="Search code sections and inspection topics" autocomplete="off" id="quickCodeSearch" placeholder="Try RS402.8, solar, panel space, EV..." type="search"/><button id="quickSearchButton" type="button">Search</button></div>
 <div aria-live="polite" class="quick-results" id="quickSearchResults"></div>
 </div>
-<h2>CodeSight Main Menu</h2><div id="cs-six"><div class="cs-grid" id="cs-main-grid"></div><div id="cs-subview"><button class="cs-return" id="cs-back-six" type="button">← Main Menu</button><h2 id="cs-subtitle"></h2><div id="cs-subgrid"></div></div><div id="cs-training"><button class="cs-return" id="cs-back-training">← Training Center</button><h2>Training Center · Practice</h2><p class="cs-muted">Prototype question bank: 20 questions per level, randomized into new 10-question exams. Verify questions and citations against the selected adopted NEC edition. Not an official licensing exam.</p><div id="cs-training-controls"><label for="cs-level">Exam level</label> <select id="cs-level"><option value="RW">Residential Wireman</option><option value="JW">Journeyman</option><option value="ME">Master</option></select> <button id="cs-start-exam">Generate New 10-Question Exam</button> <button id="cs-daily">Code question of the day</button></div><p class="cs72-bank-note">20 practice questions per level · 10 randomly selected per exam · no repeated question within a test · works offline</p><div class="cs-quizarea" id="cs-quiz"></div></div></div><div class="tilegrid" id="cs-original-dashboard-tiles"><button class="big-tile" data-topic="electric"><span class="tile-icon"><svg aria-hidden="true" focusable="false" viewbox="0 0 48 48"><path d="M5 22 24 6l19 16" fill="none" stroke="#9DE4F7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path><path d="M10 20v22h28V20L24 8z" fill="#237FA9" stroke="#9DE4F7" stroke-linejoin="round" stroke-width="2"></path><path d="M20 42V28h9v14" fill="#0D304A" stroke="#C4F2FF" stroke-width="2"></path><path d="M14 24h6v7h-6zM31 24h5v7h-5z" fill="#F5C557"></path></svg></span><strong>RESIDENTIAL ELECTRIC READY</strong><small>Future circuits and panel provisions</small><span class="tile-arrow">Inspect →</span></button>
+<h2>CodeSight Main Menu</h2><div id="cs-six"><div class="cs-grid" id="cs-main-grid"></div><div id="cs-subview"><div class="cs75-sticky-nav"><button class="cs-return" id="cs-back-six" type="button">⌂ MAIN MENU</button></div><h2 id="cs-subtitle"></h2><div id="cs-subgrid"></div></div><div id="cs-training"><button class="cs-return" id="cs-back-training">← Training Center</button><h2>Training Center · Practice</h2><p class="cs-muted">Prototype question bank: 20 questions per level, randomized into new 10-question exams. Verify questions and citations against the selected adopted NEC edition. Not an official licensing exam.</p><div id="cs-training-controls"><label for="cs-level">Exam level</label> <select id="cs-level"><option value="RW">Residential Wireman</option><option value="JW">Journeyman</option><option value="ME">Master</option></select> <button id="cs-start-exam">Generate New 10-Question Exam</button> <button id="cs-daily">Code question of the day</button></div><p class="cs72-bank-note">20 practice questions per level · 10 randomly selected per exam · no repeated question within a test · works offline</p><div class="cs-quizarea" id="cs-quiz"></div></div></div><div class="tilegrid" id="cs-original-dashboard-tiles"><button class="big-tile" data-topic="electric"><span class="tile-icon"><svg aria-hidden="true" focusable="false" viewbox="0 0 48 48"><path d="M5 22 24 6l19 16" fill="none" stroke="#9DE4F7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"></path><path d="M10 20v22h28V20L24 8z" fill="#237FA9" stroke="#9DE4F7" stroke-linejoin="round" stroke-width="2"></path><path d="M20 42V28h9v14" fill="#0D304A" stroke="#C4F2FF" stroke-width="2"></path><path d="M14 24h6v7h-6zM31 24h5v7h-5z" fill="#F5C557"></path></svg></span><strong>RESIDENTIAL ELECTRIC READY</strong><small>Future circuits and panel provisions</small><span class="tile-arrow">Inspect →</span></button>
 <button class="big-tile" data-topic="solar"><span class="tile-icon"><svg aria-hidden="true" focusable="false" role="img" viewbox="0 0 100 86"><title>Residential house with rooftop solar panels and sun</title><circle cx="79" cy="15" fill="#F5C557" r="10"></circle><g stroke="#F5C557" stroke-linecap="round" stroke-width="2.6"><path d="M79 0v3M79 27v4M63 15h4M91 15h7M68 4l3 3M88 24l3 3M90 4l-3 3"></path></g><path d="M13 43L49 17L87 43V79H13Z" fill="#e5f1f6" stroke="#a8d9ec" stroke-linejoin="round" stroke-width="3"></path><path d="M7 44L49 13L91 44" fill="none" stroke="#89dbfa" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path><path d="M21 42L49 21L78 42Z" fill="#173d60" stroke="#F5C557" stroke-width="2"></path><path d="M30 36L48 23L69 37Z" fill="#13649b" stroke="#83d9ff" stroke-width="1.5"></path><path d="M40 29l9 10M51 25l8 14M26 37h46" fill="none" stroke="#9be6ff" stroke-width="1.6"></path><path d="M22 54h16v15H22zM62 54h16v15H62z" fill="#2e8db8" stroke="#0d436a" stroke-width="2"></path><path d="M30 54v15M22 61.5h16M70 54v15M62 61.5h16" stroke="#b7edff" stroke-width="1.6"></path><path d="M43 79V54h13v25" fill="#2c6285" stroke="#0d436a" stroke-width="2"></path><circle cx="53" cy="67" fill="#F5C557" r="1.3"></circle></svg></span><strong>RESIDENTIAL SOLAR READY</strong><small>Roof zones, pathways, reserved space</small><span class="tile-arrow">Inspect →</span></button>
 <button class="big-tile" data-topic="commercial-electric"><span class="tile-icon"><svg aria-hidden="true" focusable="false" viewbox="0 0 48 48"><rect fill="#237FA9" height="38" rx="2" stroke="#9DE4F7" stroke-width="2.5" width="30" x="9" y="5"></rect><path d="M16 13h5v6h-5zM27 13h5v6h-5zM16 24h5v6h-5zM27 24h5v6h-5z" fill="#F5C557"></path><path d="M21 43V34h7v9" fill="#0D304A" stroke="#C4F2FF" stroke-width="2"></path><path d="M5 43h38" stroke="#9DE4F7" stroke-linecap="round" stroke-width="2.5"></path></svg></span><strong>COMMERCIAL ELECTRIC READY</strong><small>CE301 · CE302 — Future electrical infrastructure</small><span class="tile-arrow">Inspect →</span></button>
 <button class="big-tile" data-topic="commercial-solar"><span class="tile-icon"><svg aria-hidden="true" focusable="false" role="img" viewbox="0 0 100 86"><title>Commercial buildings with rooftop solar panels and sun</title><circle cx="80" cy="14" fill="#F5C557" r="10"></circle><g stroke="#F5C557" stroke-linecap="round" stroke-width="2.4"><path d="M80 0v3M80 26v4M64 14h4M92 14h6M69 3l3 3M88 23l3 3"></path></g><path d="M10 44V80H61V44" fill="#267EA9" stroke="#A8E5F7" stroke-width="2.5"></path><path d="M61 51h24v29H61z" fill="#1B608A" stroke="#A8E5F7" stroke-width="2.5"></path><path d="M16 52h11v10H16zM32 52h11v10H32zM48 52h8v10h-8zM67 58h12v8H67z" fill="#9ADCF1"></path><path d="M32 80V67h12v13" fill="#0D3554" stroke="#A8E5F7" stroke-width="2"></path><path d="M7 43 57 29 72 44 20 57z" fill="#0D3D63" stroke="#F5C557" stroke-linejoin="round" stroke-width="2.7"></path><path d="M18 40 30 54M33 36 45 50M48 32 60 46M13 48l52-12" stroke="#8DE4FF" stroke-width="2"></path><path d="M7 81h82" stroke="#F5C557" stroke-width="2"></path></svg></span><strong>COMMERCIAL SOLAR READY</strong><small>CS401 · CS402 · CS410 — Solar-ready zones &amp; capacity</small><span class="tile-arrow">Inspect →</span></button>
@@ -1721,18 +1820,18 @@ $('cwPrint').onclick=()=>{document.body.classList.add('cw-print-mode');window.pr
 const workspaces=[
 ['Inspection Center','▣','Inspections, corrections and POSSE-ready text',[['Inspection Topics','topics'],['Correction Writer','corrections']]],
 ['NEC Code Finder','◎','Code library, definitions and reference lookup',[['Code Library','library'],['Code Definitions','definitions'],['Correction Writer · reference selection','corrections']]],
-['Knowledge Base','◉','Visual installation guides and interactive hotspots',[['First guide · Residential Services','knowledge']]],
-['Calculators & Tables','▦','Existing NEC reference tables and calculators',[['NEC Tables','nec-tables'],['Commercial EV calculator','commercial-ev']]],
 ['Colorado Model Energy Code','⌂','Residential and commercial ready provisions',[['Residential Electric Ready','electric'],['Residential Solar Ready','solar'],['Commercial Electric Ready','commercial-electric'],['Commercial Solar Ready','commercial-solar'],['Commercial EV Ready','commercial-ev']]],
+['2024 Energy Code','▦','Residential energy code · Ventilation and lighting controls',[['R403.6.5 · Bathroom Exhaust Controls','energy2024-r40365'],['R404.2.1 · Habitable Spaces','energy2024-r40421'],['R404.2.2 · Specific Locations','energy2024-r40422'],['R404.3 · Exterior Lighting Controls','energy2024-r4043'],['R404.3.1 · Individual Dwelling Units','energy2024-r40431']]],
+['Knowledge Base','◉','Visual installation guides and interactive hotspots',[['First guide · Residential Services','knowledge']]],
 ['Training Center','✦','Daily question and RW / Journeyman / Master practice',[['10-question sample exams','training'],['Code Question of the Day','daily']]]
 ];
 const $=id=>document.getElementById(id), home=$('cs-six'),grid=$('cs-main-grid'),sub=$('cs-subview'),subgrid=$('cs-subgrid'),train=$('cs-training');
 function activate(name){let b=document.querySelector('#cs-original-dashboard-tiles [data-topic="'+name+'"],#cs-original-dashboard-tiles [data-view="'+name+'"]');if(!b)b=document.querySelector('.sidebar [data-topic="'+name+'"],.sidebar [data-view="'+name+'"]');if(b){b.click();return}alert('This original section is not yet wired in this baseline: '+name)}
 function showMenu(){sub.style.display='none';train.style.display='none';grid.style.display='grid'}
-function showWorkspace(w){grid.style.display='none';train.style.display='none';sub.style.display='block';$('cs-subtitle').textContent=w[0];subgrid.replaceChildren();w[3].forEach(([label,key],i)=>{const b=document.createElement('button');b.className='cs-sub cs-cascade-enter';b.style.setProperty('--cs-cascade-index',i);if(w[0]==='Colorado Model Energy Code'){
+function showWorkspace(w){subgrid.style.display='grid';grid.style.display='none';train.style.display='none';sub.style.display='block';$('cs-subtitle').textContent=w[0];subgrid.replaceChildren();w[3].forEach(([label,key],i)=>{const b=document.createElement('button');b.className='cs-sub cs-cascade-enter';b.style.setProperty('--cs-cascade-index',i);if(w[0]==='Colorado Model Energy Code'||w[0]==='2024 Energy Code'){
  b.classList.add('cs63-energy-tile');
- const icons={electric:'⌂',solar:'☀', 'commercial-electric':'▥','commercial-solar':'▦','commercial-ev':'▣'};
- const subtitles={electric:'RE301–RE302 · Residential electrical infrastructure',solar:'RS401–RS402 · Solar-ready roof zones','commercial-electric':'CE301–CE302 · Commercial electric ready','commercial-solar':'CS401–CS402 · Commercial solar ready','commercial-ev':'CV501–CV502 · Commercial EV ready'};
+ const icons={electric:'⌂',solar:'☀', 'commercial-electric':'▥','commercial-solar':'▦','commercial-ev':'▣','energy2024-r40365':'▤','energy2024-r40421':'◉','energy2024-r40422':'▦','energy2024-r4043':'☀','energy2024-r40431':'⌂'};
+ const subtitles={electric:'RE301–RE302 · Residential electrical infrastructure',solar:'RS401–RS402 · Solar-ready roof zones','commercial-electric':'CE301–CE302 · Commercial electric ready','commercial-solar':'CS401–CS402 · Commercial solar ready','commercial-ev':'CV501–CV502 · Commercial EV ready','energy2024-r40365':'Residential · Intermittent bathroom and toilet room exhaust controls','energy2024-r40421':'Residential · Manual dimmer or automatic shutoff','energy2024-r40422':'Residential · Automatic shutoff in specified rooms','energy2024-r4043':'Residential · Exterior lighting requirements','energy2024-r40431':'Residential · Controls where exterior lighting exceeds 30 watts'};
  const glyph=document.createElement('span');glyph.className='cs63-energy-icon';glyph.setAttribute('aria-hidden','true');glyph.textContent=icons[key]||'▣';
  const words=document.createElement('span');words.className='cs63-energy-words';const strong=document.createElement('strong');strong.textContent=label;const small=document.createElement('small');small.textContent=subtitles[key]||'';words.append(strong,small);
  const arrow=document.createElement('span');arrow.className='cs63-energy-arrow';arrow.textContent='›';arrow.setAttribute('aria-hidden','true');b.append(glyph,words,arrow)
@@ -1746,13 +1845,53 @@ function showWorkspace(w){grid.style.display='none';train.style.display='none';s
  content.append(title,detail,chip);
  const arrow=document.createElement('span');arrow.className='cs70-arrow';arrow.textContent='›';arrow.setAttribute('aria-hidden','true');
  b.append(icon,content,arrow);
- }else b.textContent=label;b.onclick=()=>{if(key==='training'||key==='daily'){sub.style.display='none';train.style.display='block';if(key==='daily')showDaily()}else if(key==='knowledge'){showKnowledge()}else activate(key)};subgrid.append(b)})}
+ }else b.textContent=label;b.onclick=()=>{if(key==='training'||key==='daily'){sub.style.display='none';train.style.display='block';if(key==='daily')showDaily()}else if(key==='knowledge'){showKnowledge()}else if(key.startsWith('energy2024-')){showEnergy2024(key)}else activate(key)};subgrid.append(b)})}
 workspaces.forEach(w=>{let b=document.createElement('button');b.className='cs-major';b.innerHTML='<span class="cs-glyph" aria-hidden="true">'+w[1]+'</span><span><strong>'+w[0]+'</strong><small>'+w[2]+'</small></span>';b.onclick=()=>w[0]==='Inspection Center'?activate('corrections'):showWorkspace(w);grid.append(b)});
 // Home navigation always restores the six primary menu tiles, not the previous submenu.
 document.addEventListener('click',event=>{
   if(event.target.closest('[data-view="home"], .floating-home')) showMenu();
 },true);
-$('cs-back-six').onclick=showMenu;$('cs-back-training').onclick=()=>showWorkspace(workspaces[5]);
+$('cs-back-six').onclick=showMenu;$('cs-back-training').onclick=()=>showWorkspace(workspaces.find(w=>w[0]==='Training Center'));
+const energy2024Sections={
+ 'energy2024-r40365':{id:'R403.6.5',name:'Intermittent exhaust control for bathrooms and toilet rooms',body:`<p>Where an exhaust system serving a bathroom or toilet room is designed for intermittent operation, the exhaust system controls shall include one or more of the following:</p><ol><li>A timer control with one or more delay setpoints that automatically turns off exhaust fans when the selected setpoint is reached. Not fewer than one delay-off setpoint shall be 30 minutes or less.</li><li>An occupant sensor control with one or more delay setpoints that automatically turns off exhaust fans in accordance with the selected delay setpoint after all occupants have vacated the space. Not fewer than one delay-off setpoint shall be 30 minutes or less.</li><li>A humidity control with an adjustable setpoint ranging between 50 percent or more and 80 percent or less relative humidity that automatically turns off exhaust fans when the selected setpoint is reached.</li><li>A contaminant control that responds to a particle or gaseous concentration and automatically turns off exhaust fans when a design setpoint is reached.</li></ol><p><em>Manual off functionality shall not be used in lieu of the minimum setpoint functionality required by this section.</em></p><p><strong>Exception:</strong> Bathroom and toilet room exhaust systems serving as an integral component of an outdoor air ventilation system or a whole-house mechanical ventilation system.</p>`},
+ 'energy2024-r40421':{id:'R404.2.1',name:'Habitable spaces',body:`<p>All permanently installed luminaires in habitable spaces shall be controlled with a <em>manual dimmer</em> or with an <em>automatic shutoff</em> control that automatically turns off lights within 20 minutes after all occupants have left the space and shall incorporate a <em>manual</em> control to allow occupants to turn the lights on or off.</p>`},
+ 'energy2024-r40422':{id:'R404.2.2',name:'Specific locations',body:`<p>All permanently installed luminaires in garages, unfinished basements, laundry rooms and utility rooms shall be controlled by an <em>automatic shutoff</em> control that automatically turns off lights within 20 minutes after all occupants have left the space and shall incorporate a <em>manual</em> control to allow occupants to turn the lights on or off.</p>`},
+ 'energy2024-r4043':{id:'R404.3',name:'Exterior lighting controls',body:`<p>Exterior lighting controls shall comply with Section R404.3.1.</p>`},
+ 'energy2024-r40431':{id:'R404.3.1',name:'Controls for individual dwelling units',body:`<p>Where the total permanently installed exterior lighting power is greater than 30 watts, the permanently installed exterior lighting shall comply with the following:</p><ol><li>Lighting shall be controlled by a <em>manual</em> on and off switch which permits <em>automatic</em> shut-off actions.</li><li>Lighting shall be automatically shut off when daylight is present and satisfies the lighting needs.</li><li>Controls that override <em>automatic</em> shut-off actions shall not be allowed unless the override automatically returns <em>automatic</em> control to its normal operation within 24 hours.</li></ol>`}
+};
+function showEnergy2024(key='energy2024-r40365'){
+ const item=energy2024Sections[key];if(!item)return;
+ $('cs-subtitle').textContent='2024 Energy Code';
+ const sectionButtons=[...subgrid.querySelectorAll(':scope > button.cs63-energy-tile')];
+ // Rebuild the 2024 section list if we arrived here from another screen.
+ if(!sectionButtons.length){showWorkspace(workspaces.find(w=>w[0]==='2024 Energy Code'));}
+ const selected=[...subgrid.querySelectorAll(':scope > button.cs63-energy-tile')].find(b=>b.dataset.cs100Key===key || b.textContent.includes(item.id));
+ const existing=subgrid.querySelector('#cs100EnergyExpanded');
+ if(existing){const same=existing.dataset.key===key;existing.remove();
+  subgrid.querySelectorAll(':scope > button.cs63-energy-tile').forEach(b=>{b.classList.remove('cs100-selected');b.setAttribute('aria-expanded','false')});
+  if(same)return;}
+ const panel=document.createElement('article');panel.className='cs73-energy-detail cs75-energy';
+ panel.id='cs100EnergyExpanded';panel.dataset.key=key;
+ if(selected){selected.classList.add('cs100-selected');selected.setAttribute('aria-expanded','true');selected.dataset.cs100Key=key;}
+ panel.innerHTML=`<button type="button" class="cs-return cs73-back">← 2024 Energy Code</button><div class="cs73-eyebrow">2024 ENERGY CODE · RESIDENTIAL REQUIREMENTS</div><h3>${item.id}: ${item.name}.</h3><div class="cs75-code-body">${item.body}</div><div class="cs73-actions"><button type="button" data-copy="citation">Copy Citation</button><button type="button" data-copy="correction">Copy Correction</button><button type="button" data-copy="text">Copy Code Text</button><button type="button" data-copy="citationtext">Copy Citation + Code</button><button type="button" class="cs73-print">Print Section</button></div><p class="cs75-copy-status" role="status" aria-live="polite"></p><p class="cs73-note">Prototype reference · Supplied wording. Confirm adoption, local amendments, applicability and observed conditions before issuing an inspection correction. Sample corrections require field-specific editing.</p>`;
+ if(selected)selected.insertAdjacentElement('afterend',panel);else subgrid.append(panel);
+ // Match Colorado Model's gentle movement down to the opened section.
+ requestAnimationFrame(()=>requestAnimationFrame(()=>{
+   if(!panel.isConnected)return;
+   const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+   panel.scrollIntoView({behavior:reduce?'instant':'smooth',block:'start'});
+ }));
+ panel.querySelector('.cs73-back').textContent='↑ Close Section';
+ panel.querySelector('.cs73-back').onclick=()=>{panel.remove();if(selected){selected.classList.remove('cs100-selected');selected.setAttribute('aria-expanded','false');selected.focus()}};
+ panel.querySelector('.cs73-print').onclick=()=>window.print();
+ const body=panel.querySelector('.cs75-code-body');
+ const codeText=()=>[...body.querySelectorAll('p,li')].map(e=>e.tagName==='LI'?`${[...e.parentNode.children].indexOf(e)+1}. ${e.textContent.trim()}`:e.textContent.trim()).join('\n\n');
+ const citation=`2024 Energy Code § ${item.id} — ${item.name}`;
+ const correction=`2024 Energy Code § ${item.id} — ${item.name}\nObserved condition: [Describe the actual noncompliant installation.]\nRequired correction: Provide controls complying with the applicable requirements of § ${item.id}. Verify the specific requirement, any exceptions, and local amendments before issuance.`;
+ async function copyText(value,button){let ok=false;try{await navigator.clipboard.writeText(value);ok=true}catch(e){const t=document.createElement('textarea');t.value=value;t.style.position='fixed';t.style.opacity='0';document.body.append(t);t.focus();t.select();try{ok=document.execCommand('copy')}catch(_){}t.remove()}
+  if(ok){panel.querySelectorAll('[data-copy]').forEach(b=>{b.classList.remove('cs75-copied');b.textContent=b.dataset.originalLabel||b.textContent});button.classList.add('cs75-copied');button.textContent='✓ Copied';panel.querySelector('.cs75-copy-status').textContent='✓ Copied to clipboard'}else{panel.querySelector('.cs75-copy-status').textContent='Clipboard unavailable. Select and copy the text manually.'}}
+ panel.querySelectorAll('[data-copy]').forEach(b=>{b.dataset.originalLabel=b.textContent;b.onclick=()=>{const k=b.dataset.copy;copyText(k==='citation'?citation:k==='correction'?correction:k==='citationtext'?citation+'\n\n'+codeText():codeText(),b)}});
+}
 function showKnowledge(){subgrid.innerHTML='<div style="grid-column:1/-1"><p><strong>Residential Services — visual guide</strong></p><p>Interactive installation diagrams and NEC-verified hotspots are planned here. We will not label an unreviewed illustration as compliant.</p><button class="cs-sub" id="cs-guide-library">Open existing Code Library</button></div>';$('cs-guide-library').onclick=()=>activate('library')}
 const questions=[
 {q:'What is the general minimum working-space width under NEC 110.26(A)(2)?',a:['24 inches','30 inches or equipment width, whichever is greater','36 inches in all cases','48 inches'],correct:1,ref:'110.26(A)(2)',why:'The general width rule is 30 inches or equipment width, whichever is greater. Check applicable exceptions.'},
@@ -1939,14 +2078,11 @@ render();
   addEventListener('load',()=>requestAnimationFrame(cascade),{once:true});
 })();</script>
 <style id="cs19Styles">.cs-inspect-v19{border:1px solid var(--line,#c9d3dc);border-radius:14px;padding:16px;margin:18px 0;background:var(--card,#fff);color:var(--ink,inherit)}.cs19-header{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center;margin-bottom:12px}.cs19-header span,.cs19-caution{font-size:.83rem;opacity:.8}.cs19-controls{display:flex;gap:9px;align-items:end;flex-wrap:wrap;margin:12px 0}.cs19-controls label{display:grid;gap:5px;flex:1 1 160px;font-size:.85rem;font-weight:650}.cs19-controls input,.cs19-controls select,.cs19-row textarea{padding:10px;border:1px solid #8e9ba9;border-radius:8px;width:100%;background:var(--card,#fff);color:inherit}.cs19-row{border:1px solid var(--line,#c9d3dc);padding:12px;margin:9px 0;border-radius:10px}.cs19-row-head{display:flex;gap:8px;justify-content:space-between;align-items:center;flex-wrap:wrap}.cs19-ref{font-size:.78rem;opacity:.78}.cs19-status{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}.cs19-status button{padding:8px 10px;border-radius:8px;border:1px solid #a0aab4;background:transparent;color:inherit;cursor:pointer}.cs19-status button[aria-pressed="true"]{border-width:2px;font-weight:800}.cs19-status .pass[aria-pressed="true"]{background:#dcf6e5;color:#086c38;border-color:#16834b}.cs19-status .fail[aria-pressed="true"]{background:#ffe5e3;color:#a52520;border-color:#b73530}.cs19-status .na[aria-pressed="true"]{background:#e4e8ec;color:#354454;border-color:#718094}.cs19-notes{margin-top:10px}.cs19-notes label{display:block;font-size:.83rem;margin-bottom:4px}.cs19-counts{display:flex;gap:10px;flex-wrap:wrap;font-size:.85rem;font-weight:700}.cs19-counts span{padding:6px 9px;border-radius:7px;background:var(--soft,#e9eef2);color:var(--ink,#222)}@media(prefers-reduced-motion:no-preference){.cs19-row{animation:cs19Fade .25s both}@keyframes cs19Fade{from{opacity:.4;transform:translateY(5px)}to{opacity:1;transform:none}}}</style><script id="cs19Logic">(()=>{'use strict';const $=id=>document.getElementById(id);if(!$('cs19Type'))return;const defaults={"Construction Meter":[['Temporary power equipment','590'],['Grounding and bonding','250'],['Overcurrent protection','240']],"Electrical Trench":[['Wiring method and installation','300'],['Minimum cover','300.5'],['Conductor and raceway protection','300']],"Residential Rough":[['Box fill','314.16'],['Cable support and protection','334'],['Equipment grounding','250']],"Commercial Rough":[['Raceway support','300'],['Box and enclosure installation','314'],['Conductor ampacity','310']],"Electrical Service":[['Grounding electrode system','250.50'],['Grounding electrode conductor','250.66'],['Main bonding jumper','250.28'],['Service grounding and bonding','250.24'],['Service disconnect','230.70'],['Working clearance','110.26'],['Interrupting rating','110.9'],['Series ratings','240.86']],"Final Inspection":[['Panel and circuit identification','408.4'],['Working clearances','110.26'],['Required GFCI protection','210.8']]};const cs52Categories={
-'Electrical':[['Construction Temp','Construction Meter'],['Electric Trench','Electrical Trench'],['Slab Electrical','Slab Electrical'],['Rough Electric','Residential Rough'],['Rough Partial','Rough Partial'],['Commercial Rough','Commercial Rough'],['Air Conditioner','Mechanical — Air Conditioner'],['Electrical Service Equipment','Electrical Service'],['Commercial Electrical Service Equipment','Commercial Electrical Service Equipment'],['Final Electric','Final Inspection'],['Commercial Final','Commercial Final']],
+'General Electrical':[['Construction Temp','Construction Meter'],['Electric Trench','Electrical Trench'],['Rough Electric','Residential Rough'],['Commercial Rough','Commercial Rough'],['Electrical Service Equipment','Electrical Service'],['Final Electric','Final Inspection'],['AC/Heatpump','AC/Heatpump'],['Slab','Slab'],['Pool Bonding','Pool Bonding'],['UFER Ground Electrode','UFER Ground Electrode']],
 'Solar PV':[['Rough Electric','Solar PV — Rough Electric'],['Electrical Service Equipment','Solar PV — Electrical Service Equipment'],['Final Electric','Solar PV — Final Electric']],
 'Mechanical / HVAC':[['Air Conditioner','Mechanical — Air Conditioner'],['Final HVAC','Mechanical — Final HVAC'],['Final Electrical','Mechanical — Final Electrical']]};
 Object.assign(defaults,{
-'Slab Electrical':[['Raceways and conductors installed in or under slabs — verify method and protection','300'],['Underground cover where applicable','300.5'],['Raceway installation and fittings','300.18']],
-'Rough Partial':[['Boxes and enclosures in inspected area','314'],['Cable and raceway support','300'],['Grounding and bonding in inspected area','250']],
-'Commercial Electrical Service Equipment':[['Service disconnecting means','230.70'],['Service conductor and equipment protection','230'],['Grounding electrode system','250.50'],['Service bonding','250.24'],['Working space and access','110.26']],
-'Commercial Final':[['Panel and circuit identification','408.4'],['Working clearances','110.26'],['Required GFCI protection — verify occupancy and location','210.8'],['Equipment labeling and identification','110.22']],
+'AC/Heatpump':[], 'Slab':[], 'Pool Bonding':[], 'UFER Ground Electrode':[],
 'Solar PV — Rough Electric':[['PV wiring methods','690'],['PV conductors and circuit routing','690.31'],['PV equipment grounding and bonding','690.43']],
 'Solar PV — Electrical Service Equipment':[['PV disconnecting means','690.13'],['Service interconnection','705'],['Marking and identification','690.56']],
 'Solar PV — Final Electric':[['PV equipment labeling','690.56'],['PV equipment access','690.34'],['PV system inspection and verification','690']],
@@ -1995,7 +2131,7 @@ for(const arr of Object.values(data)){if(!Array.isArray(arr))continue;
  if(it.custom && /^(?:NEC\s*)?310(?:\.16)?(?:\s*[—-]\s*custom inspection item)?$/i.test((it.name||'').trim())
  && (!it.status||it.status==='unreviewed') && !(it.note||'').trim())arr.splice(i,1);
  }}
-let cs52Category='Electrical';let type='Electrical Trench';const save=()=>{try{localStorage.setItem(key,JSON.stringify(data))}catch(e){$('cs19Message').textContent='Local save unavailable in this browser.'}};const mk=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e};function types(){const sel=$('cs19Type');sel.replaceChildren();(cs52Categories[cs52Category]||[]).forEach(([label,key])=>{if(!data[key])return;const o=mk('option',label);o.value=key;sel.append(o)});if(![...sel.options].some(o=>o.value===type))type=sel.options[0]?.value||type;sel.value=type}let cs22Open=-1;
+let cs52Category='General Electrical';let type='Electrical Trench';const save=()=>{try{localStorage.setItem(key,JSON.stringify(data))}catch(e){$('cs19Message').textContent='Local save unavailable in this browser.'}};const mk=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e};function types(){const sel=$('cs19Type');sel.replaceChildren();[...(cs52Categories[cs52Category]||[])].sort((a,b)=>a[0].localeCompare(b[0],undefined,{numeric:true,sensitivity:'base'})).forEach(([label,key])=>{if(!data[key]||label.trim().toLowerCase()==='general')return;const o=mk('option',label);o.value=key;sel.append(o)});if(![...sel.options].some(o=>o.value===type))type=sel.options[0]?.value||type;sel.value=type}let cs22Open=-1;
 function render(){
  types();const host=$('cs19Items');host.replaceChildren();const items=data[type];
  const counts={pass:0,fail:0,na:0,unreviewed:0};items.forEach(item=>counts[item.status in counts?item.status:'unreviewed']++);
@@ -2486,16 +2622,16 @@ const target=document.getElementById('cs46Area');if(target)target.focus();
 <script id="cs52CategoryUI">(()=>{
 const type=document.getElementById('cs19Type');if(!type)return;
 const group=type.closest('.cs19-controls');if(!group)return;
-const label=document.createElement('label');label.className='cs52-category';label.textContent='Installation category';
+const label=document.createElement('label');label.className='cs52-category';label.textContent='Inspection Category';
 const sel=document.createElement('select');sel.id='cs52Category';
-['Electrical','Solar PV','Mechanical / HVAC'].forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;sel.append(o)});
+['General Electrical','Mechanical / HVAC','Solar PV'].forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c==='General Electrical'?'Electrical':c;sel.append(o)});
 label.append(sel);group.insertBefore(label,group.firstChild);
 const lists={
-'Electrical':[['Construction Temp','Construction Meter'],['Electric Trench','Electrical Trench'],['Slab Electrical','Slab Electrical'],['Rough Electric','Residential Rough'],['Rough Partial','Rough Partial'],['Commercial Rough','Commercial Rough'],['Air Conditioner','Mechanical — Air Conditioner'],['Electrical Service Equipment','Electrical Service'],['Commercial Electrical Service Equipment','Commercial Electrical Service Equipment'],['Final Electric','Final Inspection'],['Commercial Final','Commercial Final']],
+'General Electrical':[['Construction Temp','Construction Meter'],['Electric Trench','Electrical Trench'],['Rough Electric','Residential Rough'],['Commercial Rough','Commercial Rough'],['Electrical Service Equipment','Electrical Service'],['Final Electric','Final Inspection'],['AC/Heatpump','AC/Heatpump'],['Slab','Slab'],['Pool Bonding','Pool Bonding'],['UFER Ground Electrode','UFER Ground Electrode']],
 'Solar PV':[['Rough Electric','Solar PV — Rough Electric'],['Electrical Service Equipment','Solar PV — Electrical Service Equipment'],['Final Electric','Solar PV — Final Electric']],
 'Mechanical / HVAC':[['Air Conditioner','Mechanical — Air Conditioner'],['Final HVAC','Mechanical — Final HVAC'],['Final Electrical','Mechanical — Final Electrical']]};
 sel.addEventListener('change',()=>{
-const options=lists[sel.value];if(!options?.length)return;
+const options=[...(lists[sel.value]||[])].sort((a,b)=>a[0].localeCompare(b[0],undefined,{numeric:true,sensitivity:'base'}));if(!options.length)return;
 // The existing checklist logic owns the selector; choose a real key and notify it.
 // Category is passed through a dedicated event and persisted without touching inspection results.
 document.dispatchEvent(new CustomEvent('cs52-category-change',{detail:sel.value}));
@@ -2570,7 +2706,7 @@ select.addEventListener('change',()=>{if(original){original.value=select.value;o
 const root=document.getElementById('csInspect19'),items=document.getElementById('cs19Items'),type=document.getElementById('cs19Type');if(!root||!items||!type)return;
 const STORAGE='codesight58_field_prototype_v1',CHECKLIST='codesight19_checklists_v1';let fields={};try{fields=JSON.parse(localStorage.getItem(STORAGE)||'{}')||{}}catch(e){}
 const save=()=>{try{localStorage.setItem(STORAGE,JSON.stringify(fields))}catch(e){}};
-const category=()=>document.getElementById('cs52Category')?.value||document.querySelector('#csInspect19 .cs52-category select')?.value||'Electrical';
+const category=()=>document.getElementById('cs52Category')?.value||document.querySelector('#csInspect19 .cs52-category select')?.value||'General Electrical';
 const edition=()=>document.getElementById('cs56Edition')?.value||'2026';
 const current=()=>{try{return JSON.parse(localStorage.getItem(CHECKLIST)||'{}')||{}}catch(e){return {}}};
 const key=(index)=>type.value+'::'+index;
@@ -2637,37 +2773,23 @@ reset.addEventListener('click',()=>{if(!confirm('Reset the current inspection '+
 </style>
 <script id="cs60WorkflowJS">(()=>{'use strict';
 const $=id=>document.getElementById(id),root=$('corrections'),old=$('csInspect19'),layout=root?.querySelector('.cw-layout');if(!root||!old||!layout)return;
-const ui=document.createElement('section');ui.id='cs60Workflow';ui.innerHTML='<h2>1 · Select Inspection</h2><div id="cs60Controls" class="cs19-controls"></div><div class="cs60head"><h2>2 · Inspection Report — Copy to POSSE</h2><p class="cs60help">Type or dictate each correction. Press Return for the next numbered correction; Shift+Return for another line within the same correction. Suggested code references appear after three characters. Tap Add NEC to insert the reference into the numbered correction where your cursor is located. Verify applicability before issuing.</p><label for="cs60Notes">Inspection comments and corrections</label><textarea id="cs60Notes" spellcheck="true" placeholder="1. Describe the first correction..."></textarea><div id="cs60Suggestions"><strong>Suggested NEC references</strong><div id="cs60Matches" aria-live="polite"></div></div><div id="cs61Online"><label for="cs61Query">Search beyond offline suggestions</label><div class="cs61search"><input id="cs61Query" type="search" placeholder="Search NEC topic or section…" autocomplete="off"><button type="button" id="cs61Search">Search NFPA references online ↗</button></div><p class="cs60help">Opens a web search limited to NFPA pages for the selected edition. Requires internet; results must be verified on NFPA. No licensed full-code search is implied.</p></div><div id="cs60CitationList" aria-live="polite"></div><div id="cs60Buttons"><button type="button" id="cs60Copy">Copy to POSSE</button><button type="button" class="secondary" id="cs60Reset">Reset Inspection</button></div><div id="cs60Status" role="status"></div></div>';
+const ui=document.createElement('section');ui.id='cs60Workflow';ui.innerHTML='<h2>1 · Select Inspection</h2><div id="cs60Controls" class="cs19-controls"></div><div class="cs60head"><h2>2 · Inspection Report — Copy to POSSE</h2><p class="cs60help">Use Add Correction or Add Contractor Note to begin. Press Return to continue the same entry type; Shift+Return for a line within the same entry. Suggested code references appear after three characters. Tap Add NEC to insert the reference into the numbered correction where your cursor is located. Verify applicability before issuing.</p><label for="cs60Notes">Inspection comments and corrections</label><textarea id="cs60Notes" spellcheck="true" placeholder="Tap Add Correction or Add Contractor Note to begin..."></textarea><div id="cs60Suggestions"><strong>Suggested NEC references</strong><div id="cs60Matches" aria-live="polite"></div></div><div id="cs61Online"><label for="cs61Query">Search beyond offline suggestions</label><div class="cs61search"><input id="cs61Query" type="search" placeholder="Search NEC topic or section…" autocomplete="off"><button type="button" id="cs61Search">Search NFPA references online ↗</button></div><p class="cs60help">Opens a web search limited to NFPA pages for the selected edition. Requires internet; results must be verified on NFPA. No licensed full-code search is implied.</p></div><div id="cs60CitationList" aria-live="polite"></div><div id="cs60Buttons"><button type="button" id="cs60Copy">Copy to POSSE</button><span class="cs82-action-spacer"></span><button type="button" id="cs82Undo" hidden>↶ Undo Reset</button><button type="button" class="secondary" id="cs60Reset">Reset Inspection</button></div><div id="cs60Status" role="status"></div></div>';
 layout.parentNode.insertBefore(ui,layout);
 const bar=$('cs60Controls');const category=old.querySelector('.cs52-category')||$('cs52Category')?.closest('label');const inspection=$('cs19Type')?.closest('label');const edition=$('cs56Edition')?.closest('label');for(const el of [category,inspection,edition])if(el)bar.append(el);
 const notes=$('cs60Notes'),matches=$('cs60Matches'),status=$('cs60Status');let citations=[];
+const heading=root.querySelector('h1');if(heading){const row=document.createElement('div');row.className='cs78-title-row';heading.parentNode.insertBefore(row,heading);row.append(heading);const quick=document.createElement('button');quick.type='button';quick.id='cs78BathroomNote';quick.textContent='✳ Bathroom Fan Controls';quick.title='Insert contractor final-inspection note (R403.6.5)';row.append(quick);quick.addEventListener('click',()=>insertEntry('note','R403.6.5 — Bathroom Exhaust Fan Controls (Required @ Final): Provide automatic shutoff controls for intermittently operated bathroom/toilet room exhaust fans using a timer, occupancy sensor, humidity sensor, or contaminant sensor. Timer and occupancy controls must include a setting of 30 minutes or less. A manual switch alone does not satisfy this requirement. Confirm whether the whole-house ventilation exception applies.'));const lighting=document.createElement('button');lighting.type='button';lighting.id='cs79LightingNote';lighting.textContent='✳ Lighting Controls';lighting.title='Insert 2024 Energy Code lighting controls final-inspection note';row.append(lighting);lighting.addEventListener('click',()=>insertEntry('note','R404.2.1, R404.2.2, R404.3 & R404.3.1 — Lighting Controls (Required @ Final): Habitable spaces require a manual dimmer or automatic shutoff within 20 minutes, with manual on/off control. Garages, unfinished basements, laundry rooms, and utility rooms require automatic shutoff within 20 minutes and manual on/off control. Where permanently installed exterior lighting exceeds 30 watts, provide manual on/off control, automatic daylight shutoff, and automatic return to normal automatic operation within 24 hours after an override. Verify required controls operate at final inspection.'));const gfci=document.createElement('button');gfci.type='button';gfci.id='cs82OutdoorGfci';gfci.textContent='⚡ Outdoor HVAC GFCI';gfci.title='Insert NEC 210.8(F) correction for qualifying outdoor HVAC outlets';row.append(gfci);gfci.addEventListener('click',()=>insertEntry('correction','NEC 210.8(F) — Outdoor HVAC GFCI Protection: Provide GFCI protection for qualifying outdoor dwelling-unit HVAC equipment outlets supplied by single-phase branch circuits rated 150 volts or less to ground and 50 amperes or less. The listed HVAC equipment exception expired September 1, 2026. GFCI Protection is now required'));}
+const actionRow=document.createElement('div');actionRow.className='cs78-actions';const addCorrection=document.createElement('button');addCorrection.type='button';addCorrection.className='cs78-mode';addCorrection.textContent='＋ Add Correction';const addNote=document.createElement('button');addNote.type='button';addNote.className='cs78-mode';addNote.textContent='✳ Add Note';actionRow.append(addCorrection,addNote);const selectTitle=ui.querySelector('h2');selectTitle.classList.add('cs79-select-title');selectTitle.append(actionRow);const hint=document.createElement('p');hint.className='cs78-hint';hint.textContent='Corrections use 1., 2., 3.; contractor reminders use * and do not count as violations. Enter continues the current entry type; Shift+Enter adds a line within it.';notes.after(hint);
+function renumberCorrections(){const old=notes.value;const start=notes.selectionStart,end=notes.selectionEnd;let n=0;let newText='',oldPos=0,newStart=start,newEnd=end;const rx=/(^|\n)([ \t]*)(\d+)\.([ \t]*)/g;let m;while((m=rx.exec(old))){const prefix=m[1]+m[2];const number=String(++n);const part=prefix+number+'.'+(m[4]||' ');const before=m.index+m[0].length;newText+=old.slice(oldPos,m.index)+part;const delta=part.length-m[0].length;if(before<=start)newStart+=delta;if(before<=end)newEnd+=delta;oldPos=before;}newText+=old.slice(oldPos);if(newText!==old){notes.value=newText;notes.setSelectionRange(Math.max(0,newStart),Math.max(0,newEnd));}}
+function insertEntry(kind,body=''){const v=notes.value;const caret=notes.selectionStart;const after=v.slice(caret);const before=v.slice(0,caret);const onOwnLine=!before||before.endsWith('\n');const lead=onOwnLine?'':'\n';const tail=after&&!after.startsWith('\n')?'\n':'';const prefix=kind==='note'?'* ':String(([...v.matchAll(/(?:^|\n)\s*\d+\.\s/g)].length)+1)+'. ';const insertion=lead+prefix+body+tail;notes.setRangeText(insertion,caret,notes.selectionEnd,'end');renumberCorrections();notes.focus();notes.dispatchEvent(new Event('input',{bubbles:true}));cs93RevealNewEntry();status.textContent=kind==='note'?'Contractor note inserted. Edit as needed.':'Numbered correction inserted.';}
+addCorrection.addEventListener('click',()=>insertEntry('correction'));addNote.addEventListener('click',()=>insertEntry('note'));
+
 const rules=[["90.4","Enforcement and interpretation","authority","jurisdiction","ahj","enforcement","interpretation"],["110.3(B)","Listed equipment and instructions","listing","listed","labeled","labeling","manufacturer","instructions","equipment","installation"],["110.12","Mechanical execution of work","workmanship","neat","work","installation"],["110.14","Electrical connections","torque","terminal","termination","lug","splice","connection","connector","aluminum","antioxidant"],["110.26","Working spaces and access","clearance","clear","working","space","access","panel","door","dedicated","equipment","space"],["110.27","Guarding live parts","exposed","energized","guarded","live","parts"],["200.6","Identification of grounded conductors","neutral","white","gray","grounded","conductor","identification"],["210.8","GFCI protection","gfci","gfc","ground","fault","wet","damp","garage","bathroom","outdoor","kitchen","receptacle"],["210.12","AFCI protection","afci","arc","fault","bedroom","living","area","dwelling"],["210.19","Branch-circuit conductor sizing","branch","conductor","ampacity","load"],["210.52","Dwelling receptacle placement","receptacle","spacing","wall","countertop","island","dwelling","outlet"],["210.63","Equipment servicing receptacle","service","receptacle","hvac","furnace","air","conditioner","rooftop"],["215.2","Feeder conductor sizing","feeder","conductor","sizing"],["220.87","Existing load calculations","load","calculation","demand","existing","service"],["225.30","Supply to separate buildings","detached","garage","building","feeder","supply"],["230.70","Service disconnect location","service","disconnect","main","disconnect","accessible"],["230.85","Emergency disconnects","emergency","disconnect","dwelling","exterior"],["240.4","Conductor overcurrent protection","overcurrent","breaker","fuse","conductor","protection"],["240.6","Standard ampere ratings","breaker","size","standard","fuse","rating"],["250.24","Service grounding and bonding","service","neutral","bond","grounding","conductor","grounded","conductor"],["250.50","Grounding electrode system","ground","rod","electrode","ufer","concrete","encased","grounding","electrode"],["250.52","Grounding electrodes","rod","plate","pipe","electrode","concrete","encased","ufer"],["250.53","Grounding electrode installation","ground","rod","spacing","driven","electrode","grounding"],["250.66","Grounding electrode conductor sizing","gec","grounding","electrode","conductor","size"],["250.90","Bonding requirements","bond","metal","raceway","continuity","bonding"],["250.92","Bonding of service equipment","service","bonding","raceway","nipple","bonding","bushing"],["250.97","Bonding over 250 volts","over","250","bonding","bushing","raceway"],["250.102(C)(1)","Supply-side bonding jumper sizing","supply","side","bonding","jumper","size"],["250.122","Equipment grounding conductor sizing","egc","equipment","grounding","conductor","wire","size"],["300.4","Protection against physical damage","nail","plate","bored","stud","physical","damage","protection"],["300.5","Underground installations and cover","burial","buried","trench","underground","depth","cover","grade","pvc","conduit","backfill"],["300.6","Corrosion protection","corrosion","rust","dissimilar","metal"],["300.15","Boxes or fittings required","junction","box","splice","fitting","enclosure"],["300.17","Number and size of conductors in raceway","raceway","fill","conduit","fill"],["300.21","Firestopping","firestop","fire","rated","penetration","seal"],["310.15(B)(1)","Ambient temperature correction","ambient","temperature","correction","hot","heat","rooftop"],["310.15(C)(1)","Adjustment factors","derating","derate","bundled","current","carrying","conductors"],["310.16","Conductor ampacity","ampacity","wire","size","conductor","size","thhn","thwn","copper","aluminum"],["312.6","Wire bending space","bending","space","cabinet","gutter","conductor"],["314.16","Outlet and device box fill","box","fill","volume","conductor","count","device","yoke"],["314.28","Pull and junction box sizing","pull","box","junction","box","angle","pull","straight","pull"],["334.30","NM cable securing and supporting","romex","nm","cable","staple","support"],["334.80","NM cable ampacity","romex","nm","cable","ampacity"],["342.30","IMC securing and supporting","imc","support","strap"],["344.30","RMC securing and supporting","rigid","metal","conduit","rmc","support"],["352.30","PVC conduit securing and supporting","pvc","support","strap","expansion"],["358.30","EMT securing and supporting","emt","strap","support","secure"],["404.2","Switch connections","switch","neutral","grounded","conductor"],["406.4","Receptacle mounting","receptacle","mounting","device","faceplate"],["406.9","Receptacles in damp or wet locations","weather","resistant","wet","location","in","use","cover","outdoor","receptacle"],["408.4","Circuit directory and identification","panel","directory","circuit","identification","label"],["408.41","Grounded conductor terminations","neutral","termination","multiple","neutral","terminal"],["422.31","Appliance disconnecting means","appliance","disconnect","water","heater"],["430.22","Motor conductor sizing","motor","conductor","sizing"],["430.102","Motor disconnect location","motor","disconnect","sight"],["440.14","Air-conditioning disconnect location","air","conditioner","condenser","ac","disconnect","hvac","disconnect"],["440.4","Equipment nameplate","mca","mocp","nameplate","air","conditioner","condenser"],["555.35","Marina electrical protection","marina","dock","boat","ground","fault"],["590.6","Temporary wiring GFCI","temporary","power","construction","gfci"],["625.40","EV charging circuits","ev","charger","vehicle","charging","circuit"],["625.54","EV supply equipment GFCI","ev","charger","gfci"],["680.26","Pool equipotential bonding","pool","spa","bonding","equipotential","rebar"],["680.22","Pool area receptacles and equipment","pool","receptacle","light","switch"],["690.9","PV overcurrent protection","pv","fuse","combiner","solar","overcurrent"],["690.12","PV rapid shutdown","rapid","shutdown","solar","photovoltaic"],["690.13","PV system disconnect","pv","disconnect","solar","disconnect","photovoltaic","disconnect"],["690.31","PV wiring methods","solar","pv","wiring","rooftop","conduit"],["690.33","PV mating connectors","mc4","connector","mating","pv"],["690.41","PV system grounding","pv","grounding","functionally","grounded"],["690.43","PV equipment grounding and bonding","solar","ground","pv","bonding","module","bond","rail"],["705.11","Supply-side source connections","supply","side","solar","interconnection"],["705.12","Load-side source connections","backfeed","solar","interconnection","load","side"],["695.4","Fire pump supply continuity","fire","pump","service","disconnect"],["700.10","Emergency system wiring","emergency","circuit","wiring","separation"],["702.4","Optional standby capacity","generator","standby","transfer","switch"]];
-// Build 75: expand offline topic discovery without asserting that a keyword alone proves a violation.
-const cs75Topics=[
- ["600.1","Electric signs and outline lighting — article scope","sign","signs","signage","electric sign","illuminated sign","neon","outline lighting","channel letters","led sign"],
- ["600.3","Electric sign listing","sign listing","unlisted sign","listed sign","sign label","sign certification"],
- ["600.5","Electric sign branch circuits","sign circuit","sign branch circuit","sign outlet","sign receptacle","sign power"],
- ["600.6","Electric sign disconnecting means","sign disconnect","sign switch","sign shutoff","sign isolation"],
- ["600.7","Electric sign grounding and bonding","sign grounding","sign bonding","sign ground"],
- ["600.9","Electric sign location","sign location","sign clearance","sign mounting"],
- ["680.1","Pools, spas, and similar installations","pool","swimming pool","spa","hot tub","fountain"],
- ["695.1","Fire pumps — article scope","fire pump","pump controller","fire pump feeder"],
- ["690.1","Solar photovoltaic systems — article scope","solar","photovoltaic","pv array","solar panel"],
- ["625.1","Electric vehicle power transfer — article scope","ev charger","ev charging","electric vehicle charging"],
- ["700.1","Emergency systems — article scope","emergency system","emergency generator","emergency power"],
- ["701.1","Legally required standby systems — article scope","legally required standby"],
- ["702.1","Optional standby systems — article scope","optional standby","portable generator","generator inlet"],
- ["555.1","Marinas and boatyards — article scope","marina","boat dock","shore power"],
- ["630.1","Electric welders — article scope","welder","welding machine","welding receptacle"],
- ["645.1","Information technology equipment — article scope","data center","it equipment","server room"]
-];
-rules.push(...cs75Topics);
-const type=()=>$('cs19Type')?.selectedOptions[0]?.text||'Inspection',cat=()=>$('cs52Category')?.value||'Electrical',editionValue=()=>$('cs56Edition')?.value||'2026';
+const type=()=>$('cs19Type')?.selectedOptions[0]?.text||'Inspection',cat=()=>$('cs52Category')?.value||'General Electrical',editionValue=()=>$('cs56Edition')?.value||'2026';
 const key=()=>['cs60',cat(),type(),editionValue()].join('::');let currentKey=key();
 function persist(){try{localStorage.setItem(currentKey,JSON.stringify({notes:notes.value,citations}))}catch(e){}}
-function restore(){currentKey=key();let data={};try{data=JSON.parse(localStorage.getItem(currentKey)||'{}')}catch(e){};notes.value=data.notes||'1. ';citations=Array.isArray(data.citations)?data.citations:[];update()}
+function restore(){currentKey=key();let data={};try{data=JSON.parse(localStorage.getItem(currentKey)||'{}')}catch(e){};notes.value=(typeof data.notes==='string'&&data.notes!=='1. ')?data.notes:'';citations=Array.isArray(data.citations)?data.citations:[];update()}
 function attachToCurrentCorrection(code){
- const value=notes.value;const caret=notes.selectionStart;
+ const value=notes.value;const caret=notes.selectionStart;const latest=[...value.slice(0,caret).matchAll(/(?:^|\n)\s*(\d+\.|\*)\s/g)].pop();if(!latest||latest[1]==='*'){status.textContent='Place your cursor in a numbered correction to add an NEC reference.';return;}
  const starts=[...value.matchAll(/(?:^|\n)\s*\d+\.\s/g)].map(m=>m.index+(m[0][0]==='\n'?1:0));
  const current=starts.filter(pos=>pos<=caret).pop()??0;
  const next=starts.find(pos=>pos>current);
@@ -2685,43 +2807,57 @@ function attachToCurrentCorrection(code){
  notes.dispatchEvent(new Event('input',{bubbles:true}));
  status.textContent=ref+' added to the selected correction.';
 }
-function insertAtCursor(text){const start=notes.selectionStart,end=notes.selectionEnd;notes.setRangeText(text,start,end,'end');notes.focus();notes.dispatchEvent(new Event('input',{bubbles:true}))}
-notes.addEventListener('keydown',e=>{if(e.key!=='Enter'||e.shiftKey||e.isComposing)return;e.preventDefault();const before=notes.value.slice(0,notes.selectionStart);const numbers=[...before.matchAll(/(?:^|\n)(\d+)\.\s/g)];const next=(numbers.length?Number(numbers[numbers.length-1][1]):0)+1;insertAtCursor('\n'+next+'. ')});
-function update(){matches.replaceChildren();const raw=notes.value.toLowerCase();const current=raw.split(/\n\s*\d+\.\s/).pop()||raw;const typed=current.trim();const terms=typed.match(/[a-z0-9]{3,}/g)||[];const hits=[];
+function cs93RevealNewEntry(){
+ requestAnimationFrame(()=>{
+  if(document.activeElement!==notes)return;
+  // Only follow the bottom when the inspector is composing at the end.
+  // Earlier edits must not drag the viewport away from the selected line.
+  if(notes.selectionStart<notes.value.length-2)return;
+  notes.scrollTop=notes.scrollHeight;
+  const r=notes.getBoundingClientRect();
+  const viewport=window.visualViewport;
+  const visibleBottom=viewport?viewport.offsetTop+viewport.height:window.innerHeight;
+  const clearance=24;
+  if(r.bottom>visibleBottom-clearance){
+   window.scrollBy({top:r.bottom-(visibleBottom-clearance),behavior:'instant'});
+  }
+ });
+}
+function insertAtCursor(text){const start=notes.selectionStart,end=notes.selectionEnd;notes.setRangeText(text,start,end,'end');notes.focus();notes.dispatchEvent(new Event('input',{bubbles:true}));cs93RevealNewEntry()}
+notes.addEventListener('keydown',e=>{if(e.key!=='Enter'||e.shiftKey||e.isComposing)return;e.preventDefault();const before=notes.value.slice(0,notes.selectionStart);const current=before.split('\n').pop();const lastHeader=[...before.matchAll(/(?:^|\n)\s*(\d+\.|\*)\s/g)].pop();const kind=lastHeader?.[1]==='*'?'note':'correction';if(!before.trim()){insertAtCursor(kind==='note'?'* ':'1. ');return;}if(/^\s*(?:\d+\.|\*)\s*$/.test(current)){insertAtCursor('\n');return;}const number=([...notes.value.matchAll(/(?:^|\n)\s*\d+\.\s/g)].length)+1;insertAtCursor('\n'+(kind==='note'?'* ':number+'. '));renumberCorrections();});
+function update(){matches.replaceChildren();const raw=notes.value.toLowerCase();const current=raw.slice(0,notes.selectionStart).split(/\n\s*(?:\d+\.|\*)\s/).pop()||'';const typed=current.trim();const terms=typed.match(/[a-z0-9]{3,}/g)||[];const hits=[];
 if(terms.length){for(const r of rules){let score=0;const code=r[0],description=r[1].toLowerCase();if(typed.includes(code.toLowerCase()))score+=30;for(const term of r.slice(2)){if(term.length<3)continue;if(typed.includes(term))score+=term.length>5?8:5;else if(terms.some(w=>w.length>=3&&term.startsWith(w)))score+=3}if(terms.some(w=>description.includes(w)))score+=2;if(score>0)hits.push({r,score})}}
 hits.sort((a,b)=>b.score-a.score||a.r[0].localeCompare(b.r[0]));
-for(const {r} of hits.slice(0,10)){const line=document.createElement('div');line.className='cs60ref';const title=document.createElement('span');title.textContent='NEC '+r[0]+' — '+r[1];line.append(title);const group=document.createElement('div');group.style.cssText='display:flex;gap:8px;flex-wrap:wrap';const add=document.createElement('button');add.type='button';add.textContent='＋ Add NEC '+r[0]+' to correction';add.onclick=()=>attachToCurrentCorrection(r[0]);group.append(add);const a=document.createElement('a');const article=r[0].match(/^\d{3}/)[0];a.href='https://link.nfpa.org/publications/70/'+editionValue()+'/chapters/'+article[0]+'/articles/'+article;a.target='_blank';a.rel='noopener noreferrer';a.textContent='↗ Verify NFPA';group.append(a);line.append(group);matches.append(line)}
-if(!hits.length){const hint=document.createElement('p');hint.className='cs60help';hint.textContent='Type at least three letters to see likely NEC references. Suggestions are not verified violations.';matches.append(hint)}
+$('cs60Suggestions').hidden=!hits.length;for(const {r} of hits.slice(0,3)){const line=document.createElement('div');line.className='cs60ref';const title=document.createElement('span');title.textContent='NEC '+r[0]+' — '+r[1];line.append(title);const group=document.createElement('div');group.style.cssText='display:flex;gap:8px;flex-wrap:wrap';const add=document.createElement('button');add.type='button';add.textContent='＋ Add NEC '+r[0]+' to correction';add.onclick=()=>attachToCurrentCorrection(r[0]);group.append(add);const a=document.createElement('a');const article=r[0].match(/^\d{3}/)[0];a.href='https://link.nfpa.org/publications/70/'+editionValue()+'/chapters/'+article[0]+'/articles/'+article;a.target='_blank';a.rel='noopener noreferrer';a.textContent='↗ Verify NFPA';group.append(a);line.append(group);matches.append(line)}
+
 $('cs60CitationList').textContent='Citations are inserted directly into the selected numbered correction.';persist()}
 $('cs61Search').addEventListener('click',()=>{const q=$('cs61Query').value.trim()||notes.value.split(/\n\s*\d+\.\s/).pop().trim();if(q.length<3){status.textContent='Enter at least three characters to search online.';return}const search='site:link.nfpa.org/publications/70/'+editionValue()+' '+q;window.open('https://www.google.com/search?q='+encodeURIComponent(search),'_blank','noopener,noreferrer')});$('cs61Query').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();$('cs61Search').click()}});
 notes.addEventListener('input',update);for(const el of [$('cs19Type'),$('cs52Category'),$('cs56Edition')])el?.addEventListener('change',()=>{restore();status.textContent='Inspection selection loaded.'});
 function report(){const body=notes.value.trim();const lines=['Inspection: '+cat()+' / '+type(),'NEC Edition: '+editionValue(),''];return lines.join('\n')+body}
 const posseCopyButton=$('cs60Copy');
-const emailButton=document.createElement('button');
-emailButton.type='button';
-emailButton.id='cs73Email';
-emailButton.className='secondary';
-emailButton.textContent='✉ Email Report';
-const resetButton=$('cs60Reset');
-function clearActionFeedback(){emailButton.classList.remove('cs77-confirmed');emailButton.textContent='✉ Email Report';resetButton.classList.remove('cs77-confirmed');resetButton.textContent='Reset Inspection'}
-notes.addEventListener('input',clearActionFeedback);
-for(const control of [$('cs19Type'),$('cs52Category'),$('cs56Edition')])control?.addEventListener('change',clearActionFeedback);
-posseCopyButton.insertAdjacentElement('afterend',emailButton);
-emailButton.addEventListener('click',()=>{
- const corrections=notes.value.replace(/^\\s*1\\.\\s*$/,'').trim();
- if(!corrections){status.textContent='Enter at least one inspection correction before emailing.';notes.focus();return}
- // Percent-encoding belongs only in the mailto URL, never in visible email text.
- const subject='CodeSight Inspection Report — '+cat()+' / '+type();
- const mailto='mailto:?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(report());
- emailButton.classList.add('cs77-confirmed');emailButton.textContent='✓ Email Report Opened';
- status.textContent='Email report requested — review and send it in your email app.';
- window.location.href=mailto;
-});
 function clearPosseCopied(){posseCopyButton.classList.remove('cs69-copied');posseCopyButton.textContent='Copy to POSSE'}
 notes.addEventListener('input',clearPosseCopied);
 for(const control of [$('cs19Type'),$('cs52Category'),$('cs56Edition')])control?.addEventListener('change',clearPosseCopied);
-posseCopyButton.addEventListener('click',async()=>{if(!notes.value.trim()||!notes.value.replace(/^\s*\d+\.\s*/,'').trim()){clearPosseCopied();status.textContent='Enter at least one inspection correction before copying.';notes.focus();return}try{await navigator.clipboard.writeText(report());posseCopyButton.classList.add('cs69-copied');posseCopyButton.textContent='✓ Copied to POSSE';status.textContent='Inspection report copied — paste into POSSE.'}catch(e){clearPosseCopied();notes.focus();notes.select();status.textContent='Clipboard blocked. Your report text is selected; use Copy from the iPad menu.'}});
-$('cs60Reset').addEventListener('click',()=>{if(!confirm('Reset this inspection? This clears its report notes and attached citations.'))return;notes.value='1. ';clearPosseCopied();citations=[];persist();update();resetButton.classList.add('cs77-confirmed');resetButton.textContent='✓ Inspection Reset';emailButton.classList.remove('cs77-confirmed');emailButton.textContent='✉ Email Report';status.textContent='Inspection reset. Ready for the next job.';notes.focus()});
+posseCopyButton.addEventListener('click',async()=>{if(!notes.value.trim()||!notes.value.replace(/(?:^|\n)\s*(?:\d+\.|\*)\s*/g,'').trim()){clearPosseCopied();status.textContent='Enter at least one inspection correction before copying.';notes.focus();return}try{await navigator.clipboard.writeText(report());posseCopyButton.classList.add('cs69-copied');posseCopyButton.textContent='✓ Copied to POSSE';status.textContent='Inspection report copied — paste into POSSE.'}catch(e){clearPosseCopied();notes.focus();notes.select();status.textContent='Clipboard blocked. Your report text is selected; use Copy from the iPad menu.'}});
+const undoButton=$('cs82Undo'),backupKey='codesight:lastResetInspection:v82';
+function getBackup(){try{const x=JSON.parse(localStorage.getItem(backupKey)||'null');return x&&typeof x.notes==='string'?x:null}catch(e){return null}}
+function showUndo(){undoButton.hidden=!getBackup()}
+$('cs60Reset').addEventListener('click',()=>{
+ if(!notes.value.trim()&&!citations.length){status.textContent='Inspection report is already empty.';return}
+ const snapshot={notes:notes.value,citations:[...citations],category:$('cs52Category')?.value||'',inspection:$('cs19Type')?.value||'',edition:editionValue(),savedAt:new Date().toISOString()};
+ try{localStorage.setItem(backupKey,JSON.stringify(snapshot))}catch(e){status.textContent='Unable to save an undo backup. Reset cancelled to protect your report.';return}
+ notes.value='';citations=[];clearPosseCopied();update();showUndo();status.textContent='Inspection reset. Undo Reset remains available until the next reset.';notes.focus()
+});
+undoButton.addEventListener('click',()=>{
+ const snapshot=getBackup();if(!snapshot){showUndo();status.textContent='No reset inspection is available to restore.';return}
+ if(notes.value.trim()&&!confirm('Restore the last reset inspection?\n\nThis will replace your current report.'))return;
+ const categoryControl=$('cs52Category'),typeControl=$('cs19Type'),editionControl=$('cs56Edition');
+ if(categoryControl&&snapshot.category)categoryControl.value=snapshot.category;
+ if(typeControl&&snapshot.inspection)typeControl.value=snapshot.inspection;
+ if(editionControl&&snapshot.edition)editionControl.value=snapshot.edition;
+ currentKey=key();notes.value=snapshot.notes;citations=Array.isArray(snapshot.citations)?snapshot.citations:[];clearPosseCopied();update();showUndo();status.textContent='Last reset inspection restored. Backup remains available until the next reset.';notes.focus()
+});
+showUndo();
 restore();})();</script><script id="cs64-script">(()=>{
 const configs=[['electricReadyReference','erSections','erSearch'],['solarReadyReference','srSections','srSearch'],['commercialElectricReference','ceSections','ceSearch'],['commercialSolarReference','csSections','csSearch'],['commercialEvReference','cvSections','cvSearch']];
 for(const [sectionId,rootId,searchId] of configs){
@@ -2868,65 +3004,436 @@ for(const [sectionId,rootId,searchId,name] of configs){
  search.addEventListener('input',()=>{active=null;queueMicrotask(render)});
  const observer=new MutationObserver(()=>queueMicrotask(render));observer.observe(root,{childList:true});render();
 }
-})();</script><style id="cs74DesktopLayout">
-#corrections .cs74-intro-wrap{width:min(100%,1200px);box-sizing:border-box;margin:0 auto 0;padding:0 18px}
-#corrections #cs60Workflow{width:min(100%,1200px);box-sizing:border-box;margin:16px auto}
-#corrections .cs74-intro-wrap #cs46Toolbar{display:flex;flex-wrap:wrap;gap:8px;max-width:100%;justify-content:flex-start}
-#corrections .cs74-intro-wrap .intro{max-width:100%;margin-top:16px}
-@media(max-width:760px){#corrections .cs74-intro-wrap{padding:0 12px}#corrections #cs60Workflow{width:calc(100% - 16px)}}
-</style>
-<script id="cs74DesktopLayoutJS">(()=>{
-const root=document.getElementById('corrections');if(!root)return;
-const toolbar=document.getElementById('cs46Toolbar');const eyebrow=root.querySelector(':scope > .eyebrow');const title=root.querySelector(':scope > h1');const intro=root.querySelector(':scope > .intro');
-if(!toolbar||!title)return;
-const wrap=document.createElement('div');wrap.className='cs74-intro-wrap';
-root.insertBefore(wrap,eyebrow||title);
-for(const el of [eyebrow,title,toolbar,intro])if(el)wrap.appendChild(el);
-})();</script><script id="cs76-article-finder">
+})();</script><script id="cs80SortQuickTables">(()=>{
+const bar=document.getElementById('cs46Toolbar');if(!bar)return;
+const btns=[...bar.querySelectorAll('button')];
+const numeric=b=>{const code=b.dataset.cs46||b.textContent||'';const m=code.match(/(\d{3})\.(\d+)(?:\(([A-Z])\))?(?:\((\d+)\))?/i);return m?[+m[1],+m[2],m[3]?m[3].toUpperCase().charCodeAt(0)-64:0,m[4]?+m[4]:0]:[Infinity,Infinity,Infinity,Infinity]};
+const voltage=btns.find(b=>b.dataset.cs46==='vd');
+const ordered=btns.filter(b=>b!==voltage).sort((a,b)=>{const x=numeric(a),y=numeric(b);for(let i=0;i<x.length;i++)if(x[i]!==y[i])return x[i]-y[i];return 0});
+bar.replaceChildren(...(voltage?[voltage]:[]),...ordered);
+})();</script><script id="cs84-email-collection">
 (()=>{
-const ready=()=>{
- const notes=document.getElementById('cs60Notes');
- const edition=document.getElementById('cs56Edition');
- if(!notes||!edition)return;
- const db=[[100,"Definitions","definition terminology meaning"],[110,"Requirements for Electrical Installations","working clearance equipment listing labeling installation torque"],[200,"Use and Identification of Grounded Conductors","neutral grounded conductor identification"],[210,"Branch Circuits","branch circuit receptacle gfci afci outlet dwelling"],[215,"Feeders","feeder ampacity load"],[220,"Branch-Circuit Feeder and Service Load Calculations","load calculation demand dwelling"],[225,"Outside Branch Circuits and Feeders","outside feeder detached building"],[230,"Services","service disconnect service entrance"],[240,"Overcurrent Protection","breaker fuse overcurrent protection"],[242,"Overvoltage Protection","surge protective device spd"],[245,"Overcurrent Protection for Systems Rated Over 1000 Volts ac 1500 Volts dc","medium voltage overcurrent"],[250,"Grounding and Bonding","grounding bonding electrode ground rod egc"],[300,"General Requirements for Wiring Methods and Materials","conduit wiring methods underground trench physical damage"],[310,"Conductors for General Wiring","conductor ampacity insulation temperature"],[312,"Cabinets Cutout Boxes and Meter Socket Enclosures","cabinet meter socket enclosure"],[314,"Outlet Device Pull and Junction Boxes Conduit Bodies Fittings and Handhole Enclosures","junction box box fill pull box handhole"],[320,"Armored Cable Type AC","armored cable ac cable"],[322,"Flat Cable Assemblies Type FC","flat cable"],[324,"Flat Conductor Cable Type FCC","flat conductor cable"],[326,"Integrated Gas Spacer Cable Type IGS","integrated gas spacer"],[328,"Medium Voltage Cable Type MV","medium voltage cable mv"],[330,"Metal-Clad Cable Type MC","mc cable metal clad"],[332,"Mineral-Insulated Metal-Sheathed Cable Type MI","mineral insulated cable"],[334,"Nonmetallic-Sheathed Cable Types NM NMC and NMS","romex nm cable nonmetallic sheathed"],[336,"Power and Control Tray Cable Type TC","tray cable"],[338,"Service-Entrance Cable Types SE and USE","service entrance cable ser seu"],[340,"Underground Feeder and Branch-Circuit Cable Type UF","uf cable underground feeder"],[342,"Intermediate Metal Conduit Type IMC","imc conduit"],[344,"Rigid Metal Conduit Type RMC","rigid metal conduit rmc"],[348,"Flexible Metal Conduit Type FMC","flexible metal conduit greenfield"],[350,"Liquidtight Flexible Metal Conduit Type LFMC","liquidtight flexible metal conduit"],[352,"Rigid Polyvinyl Chloride Conduit Type PVC","pvc conduit"],[353,"High Density Polyethylene Conduit Type HDPE","hdpe conduit"],[354,"Nonmetallic Underground Conduit with Conductors Type NUCC","nucc conduit"],[355,"Reinforced Thermosetting Resin Conduit Type RTRC","fiberglass conduit rtrc"],[356,"Liquidtight Flexible Nonmetallic Conduit Type LFNC","liquidtight nonmetallic conduit"],[358,"Electrical Metallic Tubing Type EMT","emt conduit tubing"],[360,"Flexible Metallic Tubing Type FMT","flexible metallic tubing"],[362,"Electrical Nonmetallic Tubing Type ENT","ent smurf tube"],[366,"Auxiliary Gutters","gutter auxiliary gutter"],[368,"Busways","busway bus duct"],[370,"Cablebus","cablebus"],[372,"Cellular Concrete Floor Raceways","cellular floor raceway"],[374,"Cellular Metal Floor Raceways","metal floor raceway"],[376,"Metal Wireways","metal wireway"],[378,"Nonmetallic Wireways","nonmetallic wireway"],[380,"Multioutlet Assemblies","multioutlet assembly"],[382,"Nonmetallic Extensions","nonmetallic extension"],[384,"Strut-Type Channel Raceway","strut raceway"],[386,"Surface Metal Raceways","surface metal raceway"],[388,"Surface Nonmetallic Raceways","surface nonmetallic raceway"],[390,"Underfloor Raceways","underfloor raceway"],[392,"Cable Trays","cable tray"],[393,"Low-Voltage Suspended Ceiling Power Distribution Systems","ceiling power distribution"],[394,"Concealed Knob-and-Tube Wiring","knob and tube"],[396,"Messenger-Supported Wiring","messenger wiring"],[398,"Open Wiring on Insulators","open wiring insulators"],[400,"Flexible Cords and Flexible Cables","cord flexible cord extension cord"],[402,"Fixture Wires","fixture wire"],[404,"Switches","switch dimmer"],[406,"Receptacles Cord Connectors and Attachment Plugs","receptacle outlet plug"],[408,"Switchboards Switchgear and Panelboards","panelboard switchboard switchgear"],[409,"Industrial Control Panels","industrial control panel"],[410,"Luminaires Lampholders and Lamps","light luminaire fixture"],[411,"Lighting Systems Operating at 30 Volts or Less","low voltage lighting"],[422,"Appliances","appliance dishwasher water heater"],[424,"Fixed Electric Space-Heating Equipment","electric heater baseboard heat"],[426,"Fixed Outdoor Electric Deicing and Snow-Melting Equipment","snow melt deicing"],[427,"Fixed Electric Heating Equipment for Pipelines and Vessels","heat trace pipeline"],[430,"Motors Motor Circuits and Controllers","motor controller overload"],[440,"Air-Conditioning and Refrigerating Equipment","air conditioner condenser hvac refrigeration"],[445,"Generators","generator alternator"],[450,"Transformers and Transformer Vaults","transformer vault"],[455,"Phase Converters","phase converter"],[460,"Capacitors","capacitor"],[470,"Resistors and Reactors","resistor reactor"],[480,"Stationary Standby Batteries","stationary battery"],[490,"Equipment Over 1000 Volts ac 1500 Volts dc Nominal","medium voltage equipment"],[500,"Hazardous Classified Locations Classes I II and III","hazardous location classified"],[501,"Class I Locations","class 1 flammable gas vapor"],[502,"Class II Locations","class 2 combustible dust"],[503,"Class III Locations","class 3 fibers"],[504,"Intrinsically Safe Systems","intrinsically safe"],[505,"Zone 0 1 and 2 Locations","hazardous zone gas"],[506,"Zone 20 21 and 22 Locations","hazardous zone dust"],[510,"Hazardous Locations Specific","hazardous location"],[511,"Commercial Garages Repair and Storage","commercial garage repair"],[513,"Aircraft Hangars","aircraft hangar"],[514,"Motor Fuel Dispensing Facilities","gas station fuel dispenser"],[515,"Bulk Storage Plants","bulk fuel storage"],[516,"Spray Application Dipping Coating and Printing Processes","spray booth paint"],[517,"Health Care Facilities","hospital patient care"],[518,"Assembly Occupancies","assembly occupancy"],[520,"Theaters Audience Areas of Motion Picture and Television Studios","theater stage"],[522,"Control Systems for Permanent Amusement Attractions","amusement attraction"],[525,"Carnivals Circuses Fairs and Similar Events","carnival fair"],[530,"Motion Picture and Television Studios","film studio television"],[540,"Motion Picture Projection Rooms","projection room"],[545,"Manufactured Buildings","manufactured building"],[547,"Agricultural Buildings","agricultural barn livestock"],[550,"Mobile Homes Manufactured Homes and Mobile Home Parks","mobile home manufactured home"],[551,"Recreational Vehicles and Recreational Vehicle Parks","rv park recreational vehicle"],[552,"Park Trailers","park trailer"],[553,"Floating Buildings","floating building"],[555,"Marinas Boatyards Floating Buildings and Commercial and Noncommercial Docking Facilities","marina boat dock shore power"],[590,"Temporary Installations","temporary power construction"],[600,"Electric Signs and Outline Lighting","sign signs signage electric sign neon illuminated sign channel letters outline lighting"],[604,"Manufactured Wiring Systems","manufactured wiring"],[605,"Office Furnishings","office furniture electrical"],[610,"Cranes and Hoists","crane hoist"],[620,"Elevators Dumbwaiters Escalators Moving Walks Platform Lifts and Stairway Chairlifts","elevator escalator lift"],[625,"Electric Vehicle Power Transfer System","ev charging charger vehicle"],[626,"Electrified Truck Parking Spaces","truck parking electrified"],[630,"Electric Welders","welder welding"],[640,"Audio Signal Processing Amplification and Reproduction Equipment","audio sound amplifier"],[645,"Information Technology Equipment","data center it server room"],[646,"Modular Data Centers","modular data center"],[647,"Sensitive Electronic Equipment","sensitive electronic"],[650,"Pipe Organs","pipe organ"],[660,"X-Ray Equipment","x ray radiology"],[665,"Induction and Dielectric Heating Equipment","induction heating"],[668,"Electrolytic Cells","electrolytic"],[669,"Electroplating","electroplating"],[670,"Industrial Machinery","industrial machine"],[675,"Electrically Driven or Controlled Irrigation Machines","irrigation machine"],[680,"Swimming Pools Fountains and Similar Installations","pool spa hot tub fountain"],[682,"Natural and Artificially Made Bodies of Water","body of water"],[685,"Integrated Electrical Systems","integrated electrical"],[690,"Solar Photovoltaic Systems","solar pv photovoltaic"],[691,"Large-Scale Photovoltaic Electric Supply Stations","utility scale solar large scale pv"],[692,"Fuel Cell Systems","fuel cell"],[694,"Wind Electric Systems","wind turbine"],[695,"Fire Pumps","fire pump sprinkler pump"],[700,"Emergency Systems","emergency system"],[701,"Legally Required Standby Systems","legally required standby"],[702,"Optional Standby Systems","optional standby generator"],[705,"Interconnected Electric Power Production Sources","interconnection backfeed distributed generation"],[706,"Energy Storage Systems","battery energy storage ess"],[708,"Critical Operations Power Systems","critical operations power"],[710,"Stand-Alone Systems","off grid standalone"],[712,"Direct Current Microgrids","dc microgrid"],[720,"Circuits and Equipment Operating at Less Than 50 Volts","low voltage circuit"],[725,"Class 1 Class 2 and Class 3 Remote-Control Signaling and Power-Limited Circuits","low voltage control signaling"],[726,"Class 4 Fault-Managed Power Systems","fault managed power"],[750,"Energy Management Systems","energy management load management"],[760,"Fire Alarm Systems","fire alarm"],[770,"Optical Fiber Cables and Raceways","fiber optic"],[800,"Communications Circuits","communications telecom"],[810,"Radio and Television Equipment","antenna radio television"],[820,"Community Antenna Television and Radio Distribution Systems","catv coax"],[830,"Network-Powered Broadband Communications Systems","broadband network"],[840,"Premises-Powered Broadband Communications Systems","broadband premises"]];
- const card=document.createElement('section');card.className='cs76-search';
- card.innerHTML='<div class="cs76-head"><strong>NEC Article Finder</strong><span id="cs76edition"></span></div><p>Search article topics, equipment, or code numbers. Results follow the selected NEC edition. Article matches are <b>unverified leads</b>, not confirmed section requirements.</p><div class="cs76-controls"><input id="cs76query" type="search" placeholder="Try: signs, grounding, solar, 600, fire pumps" aria-label="Find NEC articles"><button id="cs76clear" type="button">Clear</button></div><div id="cs76results" aria-live="polite"></div><p class="cs76-foot">2023 and 2026 article numbering may differ. Confirm the article exists and the exact requirement in the selected edition before adding a citation. This is an offline topic index, not a complete licensed NEC text search.</p>';
- const report=notes.closest('section')||notes.parentElement;
- const location=notes.parentElement;
- location.parentElement.insertBefore(card,location);
- const input=card.querySelector('#cs76query'),results=card.querySelector('#cs76results');
- const norm=x=>String(x).toLowerCase().replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
- function render(){
-  const ed=edition.value==='2023'?'2023':'2026';
-  card.querySelector('#cs76edition').textContent=ed+' NEC selected · NOT YET EDITION-VERIFIED';
-  const q=norm(input.value);
-  if(q.length<3){results.textContent='Type at least 3 characters to search the article index.';return}
-  const words=q.split(' ').filter(Boolean);
-  const hits=db.map(([number,title,keywords])=>{
-   const n=String(number),t=norm(title),k=norm(keywords);
-   let score=0;
-   if(n===q)score+=100;
-   if(n.startsWith(q))score+=45;
-   if(k.includes(q))score+=25;
-   if(t.includes(q))score+=20;
-   for(const w of words){if(w.length>=3){if(t.includes(w))score+=5;if(k.includes(w))score+=6}}
-   return {number:n,title,score};
-  }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||Number(a.number)-Number(b.number)).slice(0,15);
-  results.replaceChildren();
-  if(!hits.length){results.textContent='No indexed article matches. Try a different term. Not all NEC articles are indexed.';return}
-  for(const h of hits){
-   const item=document.createElement('div');item.className='cs76-hit';
-   const title=document.createElement('div');title.className='cs76-hit-title';title.textContent='Article '+h.number+' — '+h.title;
-   const meta=document.createElement('div');meta.className='cs76-meta';meta.textContent=ed+' NEC · topic match · edition applicability NOT VERIFIED';
-   const link=document.createElement('a');link.href='https://link.nfpa.org/publications/70/'+ed+'/chapters/'+h.number[0]+'/articles/'+h.number;link.target='_blank';link.rel='noopener noreferrer';link.textContent='↗ Check in NFPA LiNK';
-   item.append(title,meta,link);results.append(item);
+'use strict';
+const KEY='codesight_email_collection_v1';let items=[];
+try{const saved=JSON.parse(localStorage.getItem(KEY)||'[]');if(Array.isArray(saved))items=saved.filter(x=>x&&x.id&&x.text).slice(0,80)}catch(e){}
+const el=(tag,cls,txt)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(txt!==undefined)n.textContent=txt;return n};
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(items))}catch(e){}update()};
+const trigger=el('button',null,'✉ Email Collection');trigger.id='cs84-open';trigger.type='button';const count=el('span',null,'0');count.id='cs84-count';trigger.append(count);document.body.append(trigger);
+const modal=el('div');modal.id='cs84-modal';modal.hidden=true;modal.setAttribute('role','dialog');modal.setAttribute('aria-modal','true');modal.setAttribute('aria-label','Email Collection');
+const dialog=el('div');dialog.id='cs84-dialog';const header=el('div','cs84-row');header.append(el('h2',null,'Email Collection'));const close=el('button',null,'✕ Close');close.type='button';header.append(close);dialog.append(header,el('p',null,'Collect sections from Colorado Model and 2024 Energy Code. Review, copy, or compose one email. Saved on this device.'));
+const list=el('div');list.id='cs84-items';dialog.append(list);
+const previewTitle=el('h3',null,'Combined email preview');dialog.append(previewTitle);const preview=el('textarea');preview.id='cs84-preview';preview.setAttribute('aria-label','Editable email message');dialog.append(preview);
+const actions=el('div','cs84-row');const copy=el('button',null,'Copy All');const email=el('button',null,'Compose Email');const clear=el('button','cs84-danger','Clear Collection');actions.append(copy,email,clear);dialog.append(actions);const feedback=el('p');feedback.id='cs84-feedback';feedback.setAttribute('role','status');dialog.append(feedback);modal.append(dialog);document.body.append(modal);
+const message=()=> 'CodeSight — Energy Code References\n\nPlease review the following sections. Confirm locally adopted code and any amendments before applying.\n\n'+items.map((x,i)=>`${i+1}. ${x.source} — ${x.title}\n\n${x.text}`).join('\n\n--------------------\n\n');
+function update(){count.textContent=String(items.length);trigger.title=`${items.length} sections in email collection`;if(!modal.hidden)render()}
+function render(){list.replaceChildren();for(const item of items){const row=el('article');const h=el('strong',null,item.title);const source=el('p',null,item.source);const remove=el('button','cs84-danger','Remove');remove.onclick=()=>{items=items.filter(x=>x.id!==item.id);save()};row.append(h,source,remove);list.append(row)}if(!items.length)list.append(el('p',null,'No sections selected. Open a code section and tap Add to Email.'));preview.value=message();copy.disabled=email.disabled=clear.disabled=!items.length;}
+function open(){modal.hidden=false;render();close.focus()}function shut(){modal.hidden=true;trigger.focus()}
+trigger.onclick=open;close.onclick=shut;modal.addEventListener('click',e=>{if(e.target===modal)shut()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden)shut()});
+async function copyText(t){try{await navigator.clipboard.writeText(t);return true}catch(e){const area=el('textarea');area.value=t;area.style.cssText='position:fixed;opacity:0;top:0;left:0';document.body.append(area);area.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}area.remove();return ok}}
+copy.onclick=async()=>{feedback.textContent=await copyText(preview.value)?'✓ Combined email copied. Paste into Outlook or your preferred email app.':'Copy unavailable — select the preview text and copy manually.'};
+email.onclick=()=>{
+ const full=preview.value;
+ const subject='CodeSight — Energy Code References';
+ const makeLink=body=>'mailto:?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+ const fullLink=makeLink(full);
+ // Safari and mail handlers often reject oversized mailto URLs. Keep the handoff short when necessary.
+ if(fullLink.length>1900){
+   const compact='CodeSight — Selected Energy Code Sections\n\n'+items.map((x,i)=>`${i+1}. ${x.source} — ${x.title}`).join('\n')+'\n\nFull reference text is available in CodeSight. Paste the copied full message here.';
+   copyText(full).then(ok=>{feedback.textContent=ok?'Full message copied. Paste it into the email that opens.':'The email will contain section headings only. Use Copy All to include the full text.'});
+   window.location.href=makeLink(compact);
+ }else{
+   feedback.textContent='Opening the iPad default mail app… If nothing opens, check that a default email app is configured and use Copy All.';
+   window.location.href=fullLink;
+ }
+};
+clear.onclick=()=>{if(!confirm('Clear all sections from the email collection?'))return;items=[];save();feedback.textContent='Collection cleared.'};
+function add(id,title,source,text,button){if(items.some(x=>x.id===id)){feedback.textContent='Section already in collection.';open();return}items.push({id,title,source,text});save();button.classList.add('cs84-added');button.textContent='✓ Added to Email';}
+function cleanText(node){const c=node.cloneNode(true);c.querySelectorAll('button, .er-actions, .er-copy, .cs84-add, .cs73-actions, .cs75-copy-status, .cs73-note, .er-explanation, .er-correction').forEach(n=>n.remove());return c.innerText?.trim()||c.textContent.trim()}
+function enhanceColorado(){const roots=[['erSections','Residential Electric Ready'],['srSections','Residential Solar Ready'],['ceSections','Commercial Electric Ready'],['csSections','Commercial Solar Ready'],['cvSections','Commercial EV Ready']];for(const [rid,source] of roots){const root=document.getElementById(rid);if(!root)continue;for(const card of root.querySelectorAll('.er-item, .er-card')){if(card.querySelector(':scope > .cs84-add'))continue;const id=card.querySelector('.er-id')?.textContent.trim()||card.querySelector('summary strong')?.textContent.trim();if(!id||!/^([A-Z]{2}\d{3}(?:\.\d+)?)/.test(id))continue;const title=(card.querySelector('.er-title')?.textContent||card.querySelector('summary')?.textContent||id).trim();const b=el('button','cs84-add','✉ Add to Email');b.type='button';b.onclick=e=>{e.preventDefault();e.stopPropagation();const codeNode=card.querySelector('.er-code, .er-code-text, .er-requirement, .er-full-text, .er-body, .er-text, .er-item-body, .er-content');let content=codeNode?cleanText(codeNode):cleanText(card);content=content.replace(/^\s*(?:Copy Citation|Copy Correction|Print Section|Copy Code Text|Copy Citation \+ Code)\s*/gm,'').trim();add('co-'+source+'-'+id,id+' — '+title,'Colorado Model Energy Code · '+source,content,b)};card.append(b)}}}
+// Colorado sections are rendered dynamically; decorate them when they appear.
+let pending=false;const obs=new MutationObserver(()=>{if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;obs.disconnect();enhanceColorado();obs.observe(document.body,{childList:true,subtree:true})})});enhanceColorado();obs.observe(document.body,{childList:true,subtree:true});
+// 2024 Energy Code detail is rendered dynamically inside the submenu.
+const sub=document.getElementById('cs-subgrid');if(sub){const obs24=new MutationObserver(()=>{const panel=sub.querySelector('.cs73-energy-detail');if(!panel||panel.querySelector('.cs84-add'))return;const h=panel.querySelector('h3');const body=panel.querySelector('.cs75-code-body');if(!h||!body)return;const label=h.textContent.trim();const id=label.split(':')[0].trim();const b=el('button','cs84-add','✉ Add to Email');b.type='button';b.onclick=()=>add('2024-'+id,label,'2024 Energy Code',cleanText(body),b);const actions=panel.querySelector('.cs73-actions');if(actions)actions.append(b);else panel.append(b)});obs24.observe(sub,{childList:true,subtree:true})}
+})();
+</script>
+<style id="cs85-navigation-style">
+/* Unified floating navigation; preserve native iPad select pickers. */
+#cs85-nav{position:fixed;left:50%;bottom:max(22px,calc(env(safe-area-inset-bottom) + 15px));transform:translateX(-50%);z-index:9050;display:flex;align-items:center;gap:7px;padding:7px;background:rgba(15,36,55,.95);border:1px solid #547e9d;border-radius:17px;box-shadow:0 8px 26px #0008;max-width:calc(100vw - 22px);transition:padding .2s,bottom .2s,opacity .2s;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+#cs85-nav button{font:700 12px/1.1 system-ui,-apple-system,sans-serif;min-height:45px;min-width:105px;white-space:nowrap;border:1px solid #6ba4ca;border-radius:11px;background:#265d85;color:white;padding:8px 13px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px}
+#cs85-nav button:focus-visible{outline:3px solid #f7c75d;outline-offset:2px}
+#cs85-nav button:disabled{opacity:.4;cursor:default}
+#cs85-nav button[hidden]{display:none!important}
+#cs85-nav .cs85-number{display:inline-flex;align-items:center;justify-content:center;background:#f3c95d;color:#10273c;border-radius:99px;min-width:20px;height:20px;padding:0 3px;font-size:11px}
+#cs85-nav.cs85-compact{padding:4px;gap:5px;opacity:.94}#cs85-nav.cs85-compact button{min-height:38px;padding:5px 10px}
+body.cs85-editing #cs85-nav{opacity:0;pointer-events:none;transform:translate(-50%,18px)}
+body{padding-bottom:92px!important}
+#csSmartBack,#floatingHome,#cs84-open{display:none!important}
+@media(max-width:460px){#cs85-nav{width:calc(100vw - 24px);box-sizing:border-box;justify-content:space-between}#cs85-nav button{min-width:0;flex:1;padding:8px 5px;font-size:11px}#cs85-nav.cs85-compact button{padding:6px 3px}}
+@media print{#cs85-nav{display:none!important}body{padding-bottom:0!important}}
+</style>
+<script id="cs85-navigation-script">
+(()=>{'use strict';
+const oldBack=document.getElementById('csSmartBack'),oldHome=document.getElementById('floatingHome'),oldEmail=document.getElementById('cs84-open');
+if(!oldBack||!oldHome||!oldEmail)return;
+const nav=document.createElement('nav');nav.id='cs85-nav';nav.setAttribute('aria-label','CodeSight navigation');
+const back=document.createElement('button'),home=document.createElement('button'),email=document.createElement('button');
+back.type=home.type=email.type='button';back.textContent='← Back';home.textContent='⌂ Main Menu';email.innerHTML='✉ Email <span class="cs85-number">0</span>';
+nav.append(back,home,email);document.body.append(nav);
+back.addEventListener('click',()=>{if(!oldBack.hidden&&!oldBack.disabled)oldBack.click()});
+home.addEventListener('click',()=>oldHome.click());
+email.addEventListener('click',()=>oldEmail.click());
+function sync(){const onHome=!!document.querySelector('#home.section.active');back.hidden=onHome||oldBack.hidden||oldBack.disabled;home.hidden=onHome;back.disabled=oldBack.disabled;const n=oldEmail.querySelector('#cs84-count');email.querySelector('.cs85-number').textContent=n?n.textContent:'0'}
+new MutationObserver(sync).observe(oldBack,{attributes:true,attributeFilter:['hidden','disabled']});
+new MutationObserver(sync).observe(oldEmail,{childList:true,subtree:true,characterData:true});
+const sections=document.querySelector('main');if(sections)new MutationObserver(sync).observe(sections,{attributes:true,subtree:true,attributeFilter:['class']});
+document.addEventListener('click',()=>queueMicrotask(sync));
+let prev=window.scrollY;let queued=false;
+window.addEventListener('scroll',()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{const now=window.scrollY;nav.classList.toggle('cs85-compact',now>150&&now>prev+2);if(now<prev-2)nav.classList.remove('cs85-compact');prev=now;queued=false})},{passive:true});
+function focusChange(){const a=document.activeElement;const editing=a&&a.matches('textarea,input:not([type=checkbox]):not([type=radio]),[contenteditable=true]');document.body.classList.toggle('cs85-editing',!!editing)}
+document.addEventListener('focusin',focusChange);document.addEventListener('focusout',()=>setTimeout(focusChange,0));
+sync();
+})();
+</script>
+
+<!-- Build 87: aligned inspection field labels and simplified displayed category -->
+<style id="cs87InspectionLabels">
+#cs60Workflow #cs60Controls{align-items:end!important;column-gap:16px!important;row-gap:14px!important}
+#cs60Workflow #cs60Controls>label{display:flex!important;flex-direction:column!important;justify-content:flex-end!important;gap:9px!important;margin:0!important;padding:0!important;line-height:1.35!important;min-width:0!important;font-size:15px!important;font-weight:700!important}
+#cs60Workflow #cs60Controls>label>select{box-sizing:border-box!important;display:block!important;width:100%!important;min-height:58px!important;margin:0!important;padding:12px 16px!important;font-size:16px!important}
+#cs60Workflow #cs60Controls .cs52-category{display:flex!important}
+@media(max-width:760px){#cs60Workflow #cs60Controls{grid-template-columns:1fr!important}}
+</style>
+<script id="cs87InspectionLabelsJS">(()=>{
+const category=document.getElementById('cs52Category');
+if(category){const label=category.closest('label');if(label){for(const node of label.childNodes){if(node.nodeType===Node.TEXT_NODE && node.textContent.includes('Installation category'))node.textContent=node.textContent.replace('Installation category','Inspection Category');}}
+for(const option of category.options){if(option.value==='General Electrical')option.textContent='Electrical';}}
+const type=document.getElementById('cs19Type');if(type){const label=type.closest('label');if(label){for(const node of label.childNodes){if(node.nodeType===Node.TEXT_NODE && /Inspection type/i.test(node.textContent))node.textContent=node.textContent.replace(/Inspection type/i,'Inspection Type');}}}
+})();</script>
+<style id="cs88-reference-actions-style">
+/* Three consistent actions per code reference, including expanded text. */
+.cs88-actions{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important;margin:12px 0!important;padding:0!important;width:100%!important;align-items:stretch!important;border:0!important}
+.cs88-actions>button{box-sizing:border-box!important;display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;width:100%!important;min-width:0!important;min-height:49px!important;margin:0!important;padding:10px 8px!important;font:700 13px/1.25 system-ui,-apple-system,sans-serif!important;border-radius:11px!important;background:#1d6c96!important;color:#fff!important;border:1px solid #71bde3!important}
+.cs88-actions>button.cs84-added,.cs88-actions>button.cs84-added:hover{background:#1d694d!important;border-color:#64c39b!important}
+.cs88-actions>button:focus-visible{outline:3px solid #f6ca58!important;outline-offset:2px!important}
+.cs88-actions .cs88-copy-status{grid-column:1/-1}
+@media(max-width:550px){.cs88-actions{gap:5px!important}.cs88-actions>button{font-size:11px!important;padding:9px 4px!important;min-height:52px!important}}
+</style>
+
+
+<style id="cs92-matching-inspection-fields">
+/* Match all three inspection selectors to the existing NEC Edition framed field. */
+#cs60Workflow #cs60Controls{
+ display:grid!important;
+ grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(180px,.42fr)!important;
+ align-items:stretch!important;gap:14px!important;
+}
+#cs60Workflow #cs60Controls > label{
+ display:flex!important;flex-direction:column!important;justify-content:flex-start!important;
+ gap:6px!important;min-width:0!important;margin:0!important;
+ padding:9px 12px 12px!important;box-sizing:border-box!important;
+ border:1px solid #65b7e2!important;border-radius:15px!important;
+ background:rgba(27,91,125,.22)!important;
+ color:#f5f9ff!important;font-size:15px!important;font-weight:700!important;
+ line-height:1.25!important;
+}
+#cs60Workflow #cs60Controls > label > select{
+ display:block!important;width:100%!important;min-width:0!important;
+ min-height:57px!important;margin:0!important;padding:12px 16px!important;
+ box-sizing:border-box!important;background:#0c1c2e!important;color:#f5f9ff!important;
+ border:1px solid #6a849c!important;border-radius:11px!important;
+ font-size:16px!important;font-weight:650!important;
+}
+#cs60Workflow #cs60Controls > label > select:focus-visible{
+ outline:2px solid #f6cb64!important;outline-offset:2px!important;
+}
+@media(max-width:760px){
+ #cs60Workflow #cs60Controls{grid-template-columns:1fr!important;gap:10px!important}
+}
+</style>
+
+<style id="cs95-nec-table-menu-style">
+#corrections #cs46Toolbar{position:relative!important;display:flex!important;flex-wrap:wrap!important;gap:10px!important;overflow:visible!important;align-items:flex-start!important;padding:8px 0 12px!important}
+#corrections #cs46Toolbar > .cs46-btn{flex:0 1 190px!important;min-width:145px!important;max-width:210px!important;min-height:48px!important;font-size:14px!important}
+#cs95TablesWrap{position:relative;flex:0 1 190px;min-width:145px;max-width:210px}
+#cs95TablesTrigger{width:100%;min-height:48px;border-radius:9px;background:#1d719f;color:#fff;border:1px solid #68bde9;font-size:14px;font-weight:750;cursor:pointer}
+#cs95TablesTrigger[aria-expanded="true"]{background:#245a7d;border-color:#9bd4f4}
+#cs95TablesMenu{position:absolute;top:calc(100% + 8px);left:0;z-index:1100;width:min(360px,calc(100vw - 38px));max-height:min(65vh,480px);overflow:auto;padding:12px;background:#112c43;border:1px solid #72b7dc;border-radius:14px;box-shadow:0 14px 35px #0009}
+#cs95TablesMenu[hidden]{display:none!important}
+#cs95TablesMenu strong{display:block;margin:2px 4px 10px;color:#eaf6ff}
+#cs95TablesMenu button{display:block;width:100%;text-align:left;margin:5px 0;padding:12px 13px;border-radius:9px;background:#1c4867;border:1px solid #4d91b8;color:#fff;font-size:14px;font-weight:650;cursor:pointer}
+#cs95TablesMenu button:hover,#cs95TablesMenu button:focus-visible{background:#266f9b;outline:2px solid #9cdaf8;outline-offset:1px}
+#cs95TablesMenu small{display:block;color:#b9d1e2;font-size:11px;margin-top:3px;font-weight:400}
+@media(max-width:480px){#corrections #cs46Toolbar > .cs46-btn,#cs95TablesWrap{flex:1 1 135px!important;max-width:none!important}}
+</style>
+<script id="cs95-nec-table-menu-script">
+(()=>{
+'use strict';
+const bar=document.getElementById('cs46Toolbar');
+if(!bar)return;
+const buttons=[...bar.querySelectorAll(':scope > button')];
+const voltage=buttons.find(b=>b.dataset.cs46==='vd');
+const tableButtons=buttons.filter(b=>b!==voltage);
+const sortKey=b=>{
+ const code=b.dataset.cs46||b.textContent||'';
+ const m=code.match(/(\d{3})\.(\d+)(?:\(([A-Z])\))?(?:\((\d+)\))?/i);
+ return m?[+m[1],+m[2],m[3]?m[3].toUpperCase().charCodeAt(0)-64:0,m[4]?+m[4]:0]:[Infinity,Infinity,Infinity,Infinity];
+};
+tableButtons.sort((a,b)=>{
+ const x=sortKey(a),y=sortKey(b);
+ for(let i=0;i<x.length;i++)if(x[i]!==y[i])return x[i]-y[i];
+ return 0;
+});
+const wrap=document.createElement('div');wrap.id='cs95TablesWrap';
+const trigger=document.createElement('button');trigger.type='button';trigger.id='cs95TablesTrigger';
+trigger.textContent='▦ NEC Tables  ▾';trigger.setAttribute('aria-expanded','false');
+trigger.setAttribute('aria-controls','cs95TablesMenu');trigger.setAttribute('aria-haspopup','true');
+const menu=document.createElement('div');menu.id='cs95TablesMenu';menu.hidden=true;
+menu.setAttribute('aria-label','NEC Tables in numerical order');
+const title=document.createElement('strong');title.textContent='Select an NEC table';menu.append(title);
+const labels={
+ '250.66':'Grounding Electrode Conductors',
+ '250.102(C)(1)':'Supply-Side Bonding Jumpers',
+ '250.122':'Equipment Grounding Conductors',
+ '300.5':'Minimum Burial Cover',
+ '310.15(B)(1)':'Ambient Temperature Correction',
+ '310.15(C)(1)':'Conductor Adjustment Factors',
+ '310.16':'Conductor Ampacities'
+};
+for(const b of tableButtons){
+ const key=b.dataset.cs46||((b.textContent||'').match(/\d{3}\.\d+(?:\([A-Z]\))?(?:\(\d+\))?/)||[])[0];
+ if(!key)continue;
+ b.textContent='Table '+key;
+ const detail=document.createElement('small');detail.textContent=labels[key]||'Quick reference';
+ b.append(detail);
+ menu.append(b);
+}
+wrap.append(trigger,menu);
+if(voltage)bar.replaceChildren(voltage,wrap);else bar.replaceChildren(wrap);
+const setOpen=v=>{menu.hidden=!v;trigger.setAttribute('aria-expanded',String(v));trigger.textContent=v?'▦ NEC Tables  ▴':'▦ NEC Tables  ▾'};
+trigger.addEventListener('click',e=>{e.stopPropagation();setOpen(menu.hidden)});
+menu.addEventListener('click',e=>{
+ if(e.target.closest('button'))setOpen(false);
+});
+document.addEventListener('click',e=>{if(!wrap.contains(e.target))setOpen(false)});
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape'&&!menu.hidden){setOpen(false);trigger.focus()}
+});
+})();
+</script>
+
+<style id="cs96TableNavStyle">
+#cs95TablesMenu button{height:64px!important;min-height:64px!important;max-height:64px!important;box-sizing:border-box!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:flex-start!important;gap:3px!important;margin:6px 0!important;padding:8px 14px!important;white-space:normal!important;animation:none!important;line-height:1.2!important}
+#cs95TablesMenu button small{margin:0!important;line-height:1.25!important;display:block!important}
+#cs96SwitchTable{margin-right:auto!important;padding:9px 13px!important;border:1px solid #80c9ee!important;border-radius:9px!important;background:#1c709c!important;color:#fff!important;font-weight:700!important;cursor:pointer!important}
+#cs96ModalTableList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0}
+#cs96ModalTableList button{min-height:64px!important;display:flex!important;flex-direction:column;justify-content:center;text-align:left;background:#1b5275;color:white;border:1px solid #75b9dd;border-radius:10px;padding:10px 12px;font-weight:700;cursor:pointer}
+#cs96ModalTableList button small{display:block;color:#c6dce9;font-size:11px;font-weight:400;margin-top:4px}
+@media(max-width:520px){#cs96ModalTableList{grid-template-columns:1fr}#cs46Dialog header{flex-wrap:wrap}}
+</style>
+
+
+<style id="cs97TableMenuFix">
+/* Buttons must fill the dropdown, regardless of legacy .cs46-btn width rules. */
+#cs95TablesMenu{box-sizing:border-box!important;width:min(390px,calc(100vw - 36px))!important;padding:14px!important;overflow-x:hidden!important}
+#cs95TablesMenu > button[data-cs46]{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;box-sizing:border-box!important;width:100%!important;min-width:0!important;max-width:none!important;flex:none!important;height:70px!important;min-height:70px!important;max-height:70px!important;margin:7px 0!important;padding:10px 14px!important;text-align:left!important;border-radius:10px!important;white-space:normal!important;line-height:1.2!important;background:#1b5275!important;border:1px solid #78b9df!important;color:#fff!important}
+#cs95TablesMenu > button[data-cs46] small{font-size:12px!important;line-height:1.25!important;max-width:100%!important;white-space:normal!important;color:#c9e1ef!important}
+#cs96ModalTableList button{box-sizing:border-box!important;width:100%!important;height:74px!important;min-height:74px!important;max-height:74px!important;min-width:0!important;margin:0!important}
+#cs96SwitchTable{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:48px!important;white-space:nowrap!important}
+#cs96SwitchTable[hidden]{display:none!important}
+#cs46Dialog header{display:flex!important;align-items:center!important;gap:12px!important;flex-wrap:wrap!important}
+#cs46Dialog #cs46Title{flex:1 1 240px!important;margin:0!important}
+#cs46Dialog #cs46Close{margin-left:0!important}
+@media(max-width:540px){#cs46Dialog #cs46Title{flex-basis:100%!important}#cs96SwitchTable{flex:1 1 auto!important}}
+</style>
+
+
+<style id="cs99TableControls">
+/* Override inherited toolbar widths on buttons relocated inside the table menu. */
+#corrections #cs46Toolbar #cs95TablesMenu > button.cs46-btn[data-cs46]{
+ display:flex!important;flex-direction:column!important;align-items:flex-start!important;
+ justify-content:center!important;box-sizing:border-box!important;
+ width:100%!important;min-width:100%!important;max-width:100%!important;
+ flex:0 0 70px!important;height:70px!important;min-height:70px!important;max-height:70px!important;
+ margin:0!important;padding:10px 14px!important;white-space:normal!important;
+ text-align:left!important;animation:none!important;
+}
+#cs95TablesMenu{display:flex;flex-direction:column;gap:8px}
+#cs95TablesMenu[hidden]{display:none!important}
+#cs95TablesMenu > strong{margin:0 0 4px!important}
+#cs46Dialog #cs96SwitchTable{display:inline-flex!important;min-height:44px!important;align-items:center;justify-content:center}
+#cs46Dialog #cs96SwitchTable[hidden]{display:none!important}
+</style>
+
+<style id="cs100-unified-energy-layout">
+/* Colorado Model styling is untouched; use its framed card rhythm in 2024. */
+#cs-subgrid:has(> #cs100EnergyExpanded),#cs-subgrid:has(> .cs100-selected){display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;align-items:stretch;gap:12px!important}
+#cs-subgrid > button.cs63-energy-tile{box-sizing:border-box;min-width:0;width:100%}
+#cs-subgrid > button.cs63-energy-tile.cs100-selected{border:2px solid #89d7ff!important;background:#194a6b!important;box-shadow:0 0 0 2px #1d668b55}
+#cs-subgrid > button.cs63-energy-tile.cs100-selected .cs63-energy-arrow{transform:rotate(90deg)}
+#cs-subgrid > #cs100EnergyExpanded{grid-column:1/-1!important;max-width:none!important;width:100%!important;box-sizing:border-box;margin:0 0 12px!important;border:1px solid #5685a6!important;border-radius:16px!important;background:#162f45!important;padding:18px 22px!important}
+#cs100EnergyExpanded .cs73-actions{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:9px!important}
+#cs100EnergyExpanded .cs73-actions button{width:100%!important;min-width:0!important;min-height:52px!important;padding:9px!important;box-sizing:border-box!important}
+@media(max-width:650px){#cs-subgrid:has(> #cs100EnergyExpanded),#cs-subgrid:has(> .cs100-selected){grid-template-columns:1fr!important}#cs100EnergyExpanded .cs73-actions{gap:5px!important}#cs100EnergyExpanded .cs73-actions button{font-size:12px!important}}
+html[data-theme="light"] #cs-subgrid > #cs100EnergyExpanded{background:#fff!important}
+</style>
+<style id="cs101TableSelectorStyle">
+/* Keep the source table buttons available to existing reference handlers, but
+   present the full-size, two-column selector in the existing modal instead. */
+#cs95TablesMenu{display:none!important}
+#cs96ModalTableList{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important;margin:18px 0 4px!important}
+#cs96ModalTableList > button{width:100%!important;min-width:0!important;max-width:none!important;height:92px!important;min-height:92px!important;max-height:92px!important;box-sizing:border-box!important;margin:0!important;padding:14px 16px!important;border:1px solid #73b9df!important;border-radius:13px!important;background:#205676!important;color:#fff!important;text-align:left!important;font-size:17px!important;font-weight:750!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:4px!important;cursor:pointer!important}
+#cs96ModalTableList > button small{font-size:13px!important;font-weight:400!important;line-height:1.25!important;color:#c4dceb!important;margin:0!important}
+#cs96ModalTableList > button:hover,#cs96ModalTableList > button:focus-visible{background:#28749e!important;outline:2px solid #a5dcfa!important;outline-offset:1px!important}
+@media(max-width:580px){#cs96ModalTableList{grid-template-columns:1fr!important}#cs96ModalTableList > button{height:78px!important;min-height:78px!important;max-height:78px!important}}
+</style>
+
+<style id="cs102-colorado-style-2024-accordion">
+/* Only the 2024 Energy Code accordion; do not touch Colorado Model. */
+#cs-subgrid:has(> .cs63-energy-tile[data-cs100-key]),
+#cs-subgrid:has(> #cs100EnergyExpanded){
+ display:flex!important;flex-direction:column!important;gap:12px!important;align-items:stretch!important;
+}
+#cs-subgrid > button.cs63-energy-tile{
+ width:100%!important;max-width:none!important;min-width:0!important;
+ box-sizing:border-box!important;text-align:left!important;
+ border:1px solid #4b7894!important;border-radius:15px!important;
+ background:#162f45!important;padding:17px 20px!important;
+ transition:background .2s ease,border-color .2s ease!important;
+}
+#cs-subgrid > button.cs63-energy-tile.cs100-selected{
+ background:#1a435e!important;border-color:#86cbea!important;box-shadow:none!important;
+}
+#cs-subgrid > #cs100EnergyExpanded{
+ width:100%!important;max-width:none!important;box-sizing:border-box!important;
+ margin:0 0 12px!important;scroll-margin-top:88px!important;
+ animation:cs102Reveal .25s ease-out both!important;
+}
+@keyframes cs102Reveal{from{opacity:.65;transform:translateY(-7px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){#cs-subgrid > #cs100EnergyExpanded{animation:none!important}}
+</style>
+
+<style id="cs103-stable-nav-style">
+/* Navigation must be available in 2024 Energy Code, including expanded cards. */
+body.cs103-energy-view #cs85-nav{display:flex!important;visibility:visible!important}
+body.cs103-energy-view #cs85-nav button{display:flex!important}
+body.cs103-energy-view #cs85-nav button[hidden]{display:none!important}
+body.cs103-energy-view #cs85-nav #cs103EnergyBack{display:flex!important}
+#cs103EnergyBack{font:inherit}
+#cs46Dialog #cs96SwitchTable{display:inline-flex!important;align-items:center;justify-content:center;min-height:45px!important}
+#cs46Dialog #cs96SwitchTable[hidden]{display:none!important}
+#cs96ModalTableList{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+#cs96ModalTableList > button{width:100%!important;min-width:0!important;max-width:none!important;height:92px!important;min-height:92px!important;max-height:92px!important;box-sizing:border-box!important}
+@media(max-width:600px){#cs96ModalTableList{grid-template-columns:1fr!important}}
+</style>
+<script id="cs103-energy-navigation-only">(()=>{'use strict';const nav=document.getElementById('cs85-nav');const sub=document.getElementById('cs-subgrid');
+if(nav&&sub){
+ const home=nav.querySelector('button:nth-child(2)');
+ const email=nav.querySelector('button:nth-child(3)');
+ const back=nav.querySelector('button:nth-child(1)');
+ const extra=document.createElement('button');extra.type='button';extra.id='cs103EnergyBack';extra.textContent='← Back';
+ nav.insertBefore(extra,nav.firstChild);
+ const energyActive=()=>!!document.querySelector('#cs-six:not([hidden]) #cs-subgrid > .cs63-energy-tile, #cs-six:not([hidden]) #cs-subgrid > #cs100EnergyExpanded')&&
+  !!sub.closest('.section.active, #cs-subview:not([hidden])');
+ const sync=()=>{
+  const active=energyActive();
+  document.body.classList.toggle('cs103-energy-view',active);
+  extra.hidden=!active;
+  if(active){
+   if(back)back.hidden=true;
+   if(home)home.hidden=false;
+   if(email)email.hidden=false;
+  }
+ };
+ extra.addEventListener('click',()=>{
+  const expanded=document.getElementById('cs100EnergyExpanded');
+  const close=expanded?.querySelector('button[data-close],.cs100-close,.cs73-close');
+  if(close){close.click();return}
+  if(expanded){expanded.remove();sub.querySelectorAll('.cs100-selected').forEach(x=>x.classList.remove('cs100-selected'));return}
+  document.getElementById('cs-back-six')?.click();
+ });
+ new MutationObserver(()=>queueMicrotask(sync)).observe(sub,{childList:true,subtree:true});
+ document.addEventListener('click',()=>queueMicrotask(sync));
+ sync();
+}
+
+})();</script>
+
+<style id="cs104-unified-table-style">
+#cs95TablesMenu{display:none!important}
+#cs46Dialog #cs96SwitchTable{display:inline-flex!important;align-items:center;justify-content:center;min-height:46px!important;padding:9px 14px!important;background:#1d719f!important;color:white!important;border:1px solid #8ecbea!important;border-radius:10px!important;font-weight:750!important;cursor:pointer!important}
+#cs46Dialog #cs96SwitchTable[hidden]{display:none!important}
+#cs96ModalTableList{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important;margin:16px 0!important}
+#cs96ModalTableList>button{width:100%!important;min-width:0!important;max-width:none!important;height:92px!important;min-height:92px!important;max-height:92px!important;box-sizing:border-box!important;margin:0!important;padding:14px!important;background:#205676!important;color:#fff!important;border:1px solid #73b9df!important;border-radius:13px!important;text-align:left!important;font-size:16px!important;font-weight:750!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:flex-start!important;gap:5px!important;cursor:pointer!important}
+#cs96ModalTableList>button small{font-size:12px!important;color:#c4dceb!important;font-weight:400!important}
+@media(max-width:600px){#cs96ModalTableList{grid-template-columns:1fr!important}#cs96ModalTableList>button{height:78px!important;min-height:78px!important;max-height:78px!important}}
+</style>
+<script id="cs104-unified-table-controller">
+(()=>{
+'use strict';
+const modal=document.getElementById('cs46Modal'),title=document.getElementById('cs46Title'),content=document.getElementById('cs46Content');
+const header=document.querySelector('#cs46Dialog header'),trigger=document.getElementById('cs95TablesTrigger'),menu=document.getElementById('cs95TablesMenu');
+if(!modal||!title||!content||!header||!trigger||!menu)return;
+const source=[...menu.querySelectorAll('button[data-cs46]')];
+const keys=['250.66','250.102(C)(1)','250.122','300.5','310.15(B)(1)','310.15(C)(1)','310.16'];
+const labels={
+'250.66':'Grounding Electrode Conductors','250.102(C)(1)':'Supply-Side Bonding Jumpers','250.122':'Equipment Grounding Conductors','300.5':'Minimum Burial Cover','310.15(B)(1)':'Ambient Temperature Correction','310.15(C)(1)':'Conductor Adjustment Factors','310.16':'Conductor Ampacities'
+};
+let back=document.getElementById('cs96SwitchTable');
+if(!back){back=document.createElement('button');back.id='cs96SwitchTable';back.type='button';header.insertBefore(back,document.getElementById('cs46Close'))}
+back.textContent='← Back to Tables';
+const dialog=document.getElementById('cs46Dialog');
+function showModal(){modal.hidden=false;document.body.style.overflow='hidden';back.hidden=false;dialog?.scrollTo(0,0)}
+function showList(){
+ showModal();title.textContent='NEC Tables — Select a Reference';
+ const grid=document.createElement('div');grid.id='cs96ModalTableList';
+ for(const key of keys){
+  const b=document.createElement('button');b.type='button';b.textContent='Table '+key;
+  const small=document.createElement('small');small.textContent=labels[key];b.append(small);
+  b.addEventListener('click',()=>openTable(key));grid.append(b);
+ }
+ content.replaceChildren(grid);
+ back.hidden=true;
+}
+function copyFrom(selector){
+ const el=document.querySelector(selector);
+ if(!el)return false;
+ const wrap=document.createElement('div');wrap.className='cs46-scroll';wrap.append(el.cloneNode(true));
+ content.append(wrap);return true;
+}
+function openTable(key){
+ showModal();title.textContent='NEC '+key+' · Quick reference';content.replaceChildren();
+ if(key==='250.66')copyFrom('#nec-tables .nec-data-card:nth-child(1) .nec-data-scroll');
+ else if(key==='250.122')copyFrom('#nec-tables .nec-data-card:nth-child(2) .nec-data-scroll');
+ else if(key==='310.16')copyFrom('#nec-tables .cs-ampacity-card .cs-amp-wrap');
+ else {
+  const button=source.find(b=>b.dataset.cs46===key)
+   || (key==='300.5' ? document.getElementById('cs54Add300') : null)
+   || (key==='310.15(B)(1)' ? [...document.querySelectorAll('#cs46Toolbar button')].find(b=>/310\.15\(B\)\(1\).*Ambient/i.test(b.textContent||'')) : null);
+  if(button){
+   // Existing verified table-rendering code uses a second dialog. Reuse its
+   // rendered content, but display it in this ONE consistent viewer.
+   button.click();
+   const other=document.getElementById('cs54Modal');
+   const otherContent=document.getElementById('cs54Contents');
+   if(otherContent&&otherContent.childNodes.length){
+    content.replaceChildren(...[...otherContent.childNodes].map(n=>n.cloneNode(true)));
+    const otherTitle=document.getElementById('cs54Title');
+    if(otherTitle)title.textContent=otherTitle.textContent;
+   }
+   if(other){other.hidden=true;document.body.style.overflow='hidden'}
   }
  }
- input.addEventListener('input',render);
- edition.addEventListener('change',render);
- card.querySelector('#cs76clear').addEventListener('click',()=>{input.value='';render();input.focus()});
- render();
- };
- if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ready);else ready();
+ if(!content.childNodes.length){
+  const p=document.createElement('p');p.textContent='Reference data is not available in this offline build.';content.append(p);
+ }
+ back.hidden=false;dialog?.scrollTo(0,0);
+}
+const fresh=trigger.cloneNode(true);trigger.replaceWith(fresh);
+fresh.removeAttribute('aria-controls');fresh.setAttribute('aria-haspopup','dialog');
+fresh.addEventListener('click',e=>{e.preventDefault();showList()});
+const cleanBack=back.cloneNode(true);back.replaceWith(cleanBack);
+cleanBack.addEventListener('click',e=>{e.preventDefault();showList()});
+document.getElementById('cs46Close')?.addEventListener('click',()=>{cleanBack.hidden=true});
 })();
-</script></body></html>
+</script>
+</body></html>
