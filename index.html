@@ -1352,6 +1352,13 @@ html[data-theme="light"] .cs98-tagline{color:#8c5b12!important;}
 #cs-main-grid>.cs-major{min-height:175px}
 #cs-subgrid:empty:after{content:"Coming soon. This division is under development.";display:block;padding:24px;color:inherit;opacity:.75}
 @media(max-width:680px){#cs-main-grid{grid-template-columns:1fr}#cs-main-grid>.cs-major{min-height:135px}}
+</style><style id="codesite-topics-page-gutters">
+/* Give Inspection Topics consistent outer gutters without changing card internals. */
+.content:has(> #topics.active){box-sizing:border-box!important;width:100%!important;max-width:1600px!important;margin-inline:auto!important;padding-inline:clamp(22px,3.2vw,52px)!important}
+#topics.active{min-width:0!important;width:100%!important}
+#topics .it-grid{column-gap:clamp(14px,1.5vw,24px)!important;row-gap:clamp(14px,1.5vw,24px)!important}
+@media(max-width:900px){.content:has(> #topics.active){padding-inline:24px!important}#topics .it-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:620px){.content:has(> #topics.active){padding-inline:16px!important}#topics .it-grid{grid-template-columns:1fr!important}}
 </style></head><body>
 <div class="masthead"><div aria-hidden="true" class="header-reticle"><span class="reticle-ring"></span><span class="reticle-dot"></span></div>
 <div class="masthead-inner">
