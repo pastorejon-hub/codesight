@@ -1098,25 +1098,49 @@ html[data-theme="light"] .cs34-numeric{background:#e5f4ff;color:#234d6c}html[dat
 html[data-theme="light"] #cs37Panel{background:#f7fbff;color:#142b3e}html[data-theme="light"] .cs37-disclaimer{background:#e5f0f8;color:#34546a}
 </style><style id="cs38ClickRefs">#cs24Suggestions .cs25-result{display:flex;width:100%;text-align:left;cursor:pointer;color:#e5f4ff;background:#164463;border:1px solid #538eb5;border-radius:10px;padding:11px;margin:6px 0}#cs24Suggestions .cs25-result:hover{background:#205b83}#cs24Suggestions .cs25-result input[type=checkbox]{display:none}</style>
 <style id="cs44-correction-only-spacing">
-/* Correction Writer only: inset the content without altering the site grid or navigation. */
+/* Authoritative Correction Writer workspace geometry.
+   The page owns the outer gutter; the report fills that padded page.
+   Scoped to the active writer so Home, FIELD and Academy are unaffected. */
+body:has(#corrections.active) .content {
+  width:100%;
+  max-width:none;
+  margin:0 auto;
+  padding:24px clamp(20px,2.5vw,40px);
+  box-sizing:border-box;
+}
 #corrections.active {
-  box-sizing:border-box !important;
-  width:calc(100% - 48px) !important;
-  max-width:calc(100% - 48px) !important;
-  margin-inline:24px !important;
-  min-width:0 !important;
+  width:100%;
+  max-width:none;
+  min-width:0;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+#corrections.active #cs60Workflow {
+  width:100%;
+  max-width:none;
+  margin:16px 0;
+  box-sizing:border-box;
 }
 #corrections.active .brent-tool,
 #corrections.active .cs-field,
 #corrections.active .cs-inspect-v19,
 #corrections.active .cw-layout,
-#corrections.active .cw-panel {max-width:100%;min-width:0;box-sizing:border-box}
+#corrections.active .cw-panel {
+  max-width:100%;
+  min-width:0;
+  box-sizing:border-box;
+}
 #corrections.active .cs19-controls > *,
 #corrections.active .cs-calc-grid > * {min-width:0;max-width:100%}
-#corrections.active input, #corrections.active select,
+#corrections.active input,
+#corrections.active select,
 #corrections.active textarea {max-width:100%;box-sizing:border-box}
-@media(max-width:700px){
-  #corrections.active{width:calc(100% - 24px) !important;max-width:calc(100% - 24px) !important;margin-inline:12px !important}
+@media(max-width:700px) {
+  body:has(#corrections.active) .content {
+    padding:16px;
+  }
+  #corrections.active #cs60Workflow {padding:16px}
 }
 </style>
 <style id="cs45NoteFix">#nec-tables .cs45-nec-note{box-sizing:border-box;max-width:100%;margin:18px 0 4px;padding:0 4px;white-space:normal;overflow-wrap:break-word;line-height:1.55;color:#b8cde0}</style><style id="cs46Style">
@@ -2779,7 +2803,7 @@ reset.addEventListener('click',()=>{if(!confirm('Reset the current inspection '+
 @media(max-width:750px){#cs59Step1 .cs19-controls{grid-template-columns:1fr!important}#corrections .cw-layout{display:flex!important;flex-direction:column!important}#cs59Step1{padding:12px}}
 </style>
 <style id="cs60Style">
-#corrections .cw-layout{display:none!important}#cs60Workflow{max-width:1200px;margin:16px auto;padding:18px;background:#142d44;border:1px solid #416781;border-radius:16px;color:#edf7ff}#cs60Workflow h2{font-size:22px;margin:6px 0 18px}#cs60Workflow .cs19-controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(160px,.42fr);gap:12px}#cs60Workflow label{display:block;font-weight:650}#cs60Workflow select{width:100%;min-height:48px}#cs60Notes{display:block;width:100%;box-sizing:border-box;min-height:230px;line-height:1.65;font:17px/1.65 system-ui,sans-serif;padding:14px;background:#0c1c2c;color:#fff;border:1px solid #5989a7;border-radius:10px;resize:vertical}#cs60Suggestions{margin:14px 0;padding:12px;border:1px solid #476c83;border-radius:10px}#cs60Suggestions .cs60ref{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:12px 4px;border-bottom:1px solid #375970}#cs60Suggestions .cs60ref:last-child{border:0}#cs60Workflow button,#cs60Workflow .cs60ref a{background:#1b74aa;border:1px solid #78b9dc;border-radius:8px;color:#fff;padding:10px 14px;font:inherit;cursor:pointer;text-decoration:none}#cs60Workflow button.secondary{background:#25435b}#cs60Buttons{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}#cs60Status{min-height:1.5em;color:#a9dafa}#cs60Workflow .cs60help{color:#bdd4e4;font-size:14px;line-height:1.5}#cs60Workflow .cs60head{border-top:1px solid #365b76;margin-top:24px;padding-top:18px}#cs60CitationList{color:#aee0ff;font-size:14px;margin:10px 0}@media(max-width:760px){#cs60Workflow .cs19-controls{grid-template-columns:1fr}#cs60Workflow{padding:12px}}
+#corrections .cw-layout{display:none!important}#cs60Workflow{width:100%;max-width:none;box-sizing:border-box;margin:16px 0;padding:18px;background:#142d44;border:1px solid #416781;border-radius:16px;color:#edf7ff}#cs60Workflow h2{font-size:22px;margin:6px 0 18px}#cs60Workflow .cs19-controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(160px,.42fr);gap:12px}#cs60Workflow label{display:block;font-weight:650}#cs60Workflow select{width:100%;min-height:48px}#cs60Notes{display:block;width:100%;box-sizing:border-box;min-height:230px;line-height:1.65;font:17px/1.65 system-ui,sans-serif;padding:14px;background:#0c1c2c;color:#fff;border:1px solid #5989a7;border-radius:10px;resize:vertical}#cs60Suggestions{margin:14px 0;padding:12px;border:1px solid #476c83;border-radius:10px}#cs60Suggestions .cs60ref{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:12px 4px;border-bottom:1px solid #375970}#cs60Suggestions .cs60ref:last-child{border:0}#cs60Workflow button,#cs60Workflow .cs60ref a{background:#1b74aa;border:1px solid #78b9dc;border-radius:8px;color:#fff;padding:10px 14px;font:inherit;cursor:pointer;text-decoration:none}#cs60Workflow button.secondary{background:#25435b}#cs60Buttons{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}#cs60Status{min-height:1.5em;color:#a9dafa}#cs60Workflow .cs60help{color:#bdd4e4;font-size:14px;line-height:1.5}#cs60Workflow .cs60head{border-top:1px solid #365b76;margin-top:24px;padding-top:18px}#cs60CitationList{color:#aee0ff;font-size:14px;margin:10px 0}@media(max-width:760px){#cs60Workflow .cs19-controls{grid-template-columns:1fr}#cs60Workflow{padding:12px}}
 #cs61Online{margin:12px 0;padding:14px;border:1px solid #476c83;border-radius:10px}#cs61Online label{margin-bottom:8px}#cs61Online .cs61search{display:flex;gap:8px;flex-wrap:wrap}#cs61Query{flex:1;min-width:210px;min-height:48px;padding:12px;font-size:16px;background:#0c1c2c;color:#fff;border:1px solid #5989a7;border-radius:8px}
 </style>
 <script id="cs60WorkflowJS">(()=>{'use strict';
