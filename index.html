@@ -1098,19 +1098,11 @@ html[data-theme="light"] .cs34-numeric{background:#e5f4ff;color:#234d6c}html[dat
 html[data-theme="light"] #cs37Panel{background:#f7fbff;color:#142b3e}html[data-theme="light"] .cs37-disclaimer{background:#e5f0f8;color:#34546a}
 </style><style id="cs38ClickRefs">#cs24Suggestions .cs25-result{display:flex;width:100%;text-align:left;cursor:pointer;color:#e5f4ff;background:#164463;border:1px solid #538eb5;border-radius:10px;padding:11px;margin:6px 0}#cs24Suggestions .cs25-result:hover{background:#205b83}#cs24Suggestions .cs25-result input[type=checkbox]{display:none}</style>
 <style id="cs44-correction-only-spacing">
-/* Authoritative Correction Writer workspace geometry.
-   The page owns the outer gutter; the report fills that padded page.
-   Scoped to the active writer so Home, FIELD and Academy are unaffected. */
-body:has(#corrections.active) .content {
-  width:100%;
-  max-width:none;
-  margin:0 auto;
-  padding:24px clamp(20px,2.5vw,40px);
-  box-sizing:border-box;
-}
+/* Correction Writer uses the SAME .content container as the homepage.
+   Do not override .content width, max-width or responsive page gutters here. */
 #corrections.active {
   width:100%;
-  max-width:none;
+  max-width:100%;
   min-width:0;
   margin:0;
   padding:0;
@@ -1118,7 +1110,7 @@ body:has(#corrections.active) .content {
 }
 #corrections.active #cs60Workflow {
   width:100%;
-  max-width:none;
+  max-width:100%;
   margin:16px 0;
   box-sizing:border-box;
 }
@@ -1136,12 +1128,6 @@ body:has(#corrections.active) .content {
 #corrections.active input,
 #corrections.active select,
 #corrections.active textarea {max-width:100%;box-sizing:border-box}
-@media(max-width:700px) {
-  body:has(#corrections.active) .content {
-    padding:16px;
-  }
-  #corrections.active #cs60Workflow {padding:16px}
-}
 </style>
 <style id="cs45NoteFix">#nec-tables .cs45-nec-note{box-sizing:border-box;max-width:100%;margin:18px 0 4px;padding:0 4px;white-space:normal;overflow-wrap:break-word;line-height:1.55;color:#b8cde0}</style><style id="cs46Style">
 #cs46Toolbar{display:flex;gap:9px;overflow-x:auto;max-width:100%;padding:12px 2px 18px;scrollbar-width:thin;align-items:stretch}
