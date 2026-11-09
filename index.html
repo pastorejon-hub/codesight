@@ -1101,11 +1101,13 @@ html[data-theme="light"] #cs37Panel{background:#f7fbff;color:#142b3e}html[data-t
 /* Correction Writer uses the SAME .content container as the homepage.
    Do not override .content width, max-width or responsive page gutters here. */
 #corrections.active {
+  /* Own the inner gutter: it remains visible even if other page scripts
+     change the width or position of the outer content container. */
   width:100%;
   max-width:100%;
   min-width:0;
   margin:0;
-  padding:0;
+  padding-inline:clamp(16px, 2.5vw, 40px);
   box-sizing:border-box;
 }
 #corrections.active #cs60Workflow {
